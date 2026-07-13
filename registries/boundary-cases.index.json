@@ -1,0 +1,740 @@
+{
+  "manifest_id": "pass4a-boundary-cases-v0",
+  "total_boundary_cases": 44,
+  "partially_eligible": 35,
+  "legacy_module": 9,
+  "entries": [
+    {
+      "file": "addr128.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "addr128",
+      "title": "Addr128 Implementation Overview",
+      "kind": "locator.graph",
+      "scope": "addr128/locator/lane/binding",
+      "missing_fields": [
+        "address.locator",
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (7/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-browser-smoke-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-browser-smoke-court",
+      "title": "Autonomous World UX / Browser Smoke Court",
+      "kind": "world.browser-smoke-court",
+      "scope": "omi/world/browser/smoke-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-builder-model.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-builder-model",
+      "title": "Autonomous World Builder Model",
+      "kind": "world.autonomous-builder-model",
+      "scope": "omi/world/builder/model",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-interjection-overlay.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-interjection-overlay",
+      "title": "Autonomous World Interjection Overlay",
+      "kind": "world.interjection-overlay",
+      "scope": "omi/world/interjection/overlay",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-live-renderer.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-live-renderer",
+      "title": "Autonomous World Live Renderer",
+      "kind": "world.live-renderer",
+      "scope": "omi/world/renderer/live-plan",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-live-transport-adapter-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-live-transport-adapter-court",
+      "title": "Autonomous World Live Transport Adapter Court",
+      "kind": "world.live-transport-adapter-court",
+      "scope": "omi/world/live-transport-adapter/carrier-event-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-merge-reconciliation-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-merge-reconciliation-court",
+      "title": "Autonomous World Merge / Reconciliation Court",
+      "kind": "world.merge-reconciliation-court",
+      "scope": "omi/world/merge-reconciliation/admitted-history-join",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-overlay-admission-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-overlay-admission-court",
+      "title": "Autonomous World Overlay Admission Court",
+      "kind": "world.overlay-admission-court",
+      "scope": "omi/world/overlay-admission/safe-mutation",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-package-sync-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-package-sync-court",
+      "title": "Autonomous World Package Sync Court",
+      "kind": "world.package-sync-court",
+      "scope": "omi/world/package-sync/portable-history-evidence",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-peer-exchange-protocol.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-peer-exchange-protocol",
+      "title": "Autonomous World Peer Exchange Protocol",
+      "kind": "world.peer-exchange-protocol",
+      "scope": "omi/world/peer-exchange/protocol-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-pubsub-subscription-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-pubsub-subscription-court",
+      "title": "Autonomous World Pub/Sub Subscription Court",
+      "kind": "world.pubsub-subscription-court",
+      "scope": "omi/world/pubsub-subscription/filter-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-transport-availability-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-transport-availability-court",
+      "title": "Autonomous World Transport Availability Court",
+      "kind": "world.transport-availability-court",
+      "scope": "omi/world/transport-availability/evidence-map-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-transport-checkpoint-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-transport-checkpoint-court",
+      "title": "Autonomous World Transport Checkpoint Court",
+      "kind": "world.transport-checkpoint-court",
+      "scope": "omi/world/transport-checkpoint/resume-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-transport-compaction-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-transport-compaction-court",
+      "title": "Autonomous World Transport Compaction Court",
+      "kind": "world.transport-compaction-court",
+      "scope": "omi/world/transport-compaction/evidence-bundle-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-transport-repair-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-transport-repair-court",
+      "title": "Autonomous World Transport Repair Court",
+      "kind": "world.transport-repair-court",
+      "scope": "omi/world/transport-repair/evidence-repair-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-transport-replay-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-transport-replay-court",
+      "title": "Autonomous World Transport Replay Court",
+      "kind": "world.transport-replay-court",
+      "scope": "omi/world/transport-replay/event-log-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-transport-request-scheduler-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-transport-request-scheduler-court",
+      "title": "Autonomous World Transport Request Scheduler Court",
+      "kind": "world.transport-request-scheduler-court",
+      "scope": "omi/world/transport-request-scheduler/request-plan-court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "autonomous-world-version-history-court.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "autonomous-world-version-history-court",
+      "title": "Autonomous World Version History Court",
+      "kind": "world.version-history-court",
+      "scope": "omi/world/version-history/receipt-linked-graph",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "boundary-geometry-constitution.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "boundary-geometry-constitution",
+      "title": "Boundary Geometry Constitution",
+      "kind": "constitutional.doctrine",
+      "scope": "omi/constitution/boundary/geometry",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "canon-operational/envelope-bitboard.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "canon-operational.envelope-bitboard",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "canon-operational/omicron-receipt.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "canon-operational.omicron-receipt",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "canon-operational/omiom.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "canon-operational.omiom",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "canon-operational/orbit.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "canon-operational.orbit",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "canon-operational/semantic-lattice.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "canon-operational.semantic-lattice",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "canon-operational/sense-pg.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "canon-operational.sense-pg",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "distributed-adapter-transport-registry.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "distributed-adapter-transport-registry",
+      "title": "Distributed Adapter Transport Registry",
+      "kind": "runtime.adapter-transport-registry",
+      "scope": "omi/runtime/adapter/transport",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "metatron-operational/metatron-witness.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "metatron-operational.metatron-witness",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "narrative-series.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "narrative-series",
+      "title": "When Wisdom, Law, and the Tribe Sat Down Together",
+      "kind": "narrative.world",
+      "scope": "narrative-series/world/chapter/article",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "network-bootable-runtime-resolver.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "network-bootable-runtime-resolver",
+      "title": "Network-Bootable OMI Runtime Resolver",
+      "kind": "runtime.resolver-doctrine",
+      "scope": "omi/runtime/resolver/lattice",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "omi-observer-lattice-sitter.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "omi-observer-lattice-sitter",
+      "title": "OMI Observer / Lattice-Sitter Doctrine",
+      "kind": "observer.projection-resolver",
+      "scope": "omi/observer/lattice-sitter/projection-resolver",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "omi-system.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "omi-system",
+      "title": "OMI Declarative Self Map",
+      "kind": "constitutional.self-map",
+      "scope": "omi/constitution/declaration/self-map",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "omi-transmutator-roundtrip.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "omi-transmutator-roundtrip",
+      "title": "OMI Transmutator Roundtrip Court",
+      "kind": "transmutator.roundtrip-court",
+      "scope": "omi/transmutator/roundtrip/court",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "omnicron-operational/atomic-kernel.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "omnicron-operational.atomic-kernel",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "omnicron-operational/pair-machine.omilisp",
+      "current_class": "legacy-module",
+      "sid": "",
+      "title": "",
+      "kind": "",
+      "scope": "///",
+      "missing_fields": [
+        "identity (sid/title/kind)",
+        "address",
+        "scope",
+        "authority"
+      ],
+      "recommended_fix": "Regenerate with (omi ...) form or classify as legacy-executable-candidate",
+      "target_repo": "setco-framework-model",
+      "safe_generated_sid": "omnicron-operational.pair-machine",
+      "should_remain_legacy_module": true,
+      "reason": "Uses (omi-module ...) form for executable candidates; different structure from (omi ...) declarations"
+    },
+    {
+      "file": "orientation-incidence-blackboard.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "orientation-incidence-blackboard",
+      "title": "Orientation Incidence Blackboard Doctrine",
+      "kind": "algebra.derived-orientation-doctrine",
+      "scope": "omi/orientation/incidence/blackboard",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "polyform-cons-reconstruction.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "polyform-cons-reconstruction",
+      "title": "Polyforms as OMI-CONS Metric Reconstructions",
+      "kind": "geometry.derived-doctrine",
+      "scope": "omi/cons/metric-geometry/polyform",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "raw-binary-chunk-receipt-index.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "raw-binary-chunk-receipt-index",
+      "title": "Raw Binary Chunk Receipt Index",
+      "kind": "lattice.chunk-receipt-index",
+      "scope": "omi/lattice/chunk/receipt",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "raw-binary-decentralized-lattice.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "raw-binary-decentralized-lattice",
+      "title": "Raw Binary Decentralized Lattice Integration Audit",
+      "kind": "lattice.integration-audit",
+      "scope": "omi/lattice/raw-binary/integration",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "runtime-channel-manifest.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "runtime-channel-manifest",
+      "title": "Runtime Channel Manifest Court",
+      "kind": "runtime.channel-manifest",
+      "scope": "omi/runtime/channel/manifest",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "sixty-four-ion-blackboard-pairing.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "sixty-four-ion-blackboard-pairing",
+      "title": "64-Ion Blackboard Pairing Doctrine",
+      "kind": "algebra.pairwise-blackboard-doctrine",
+      "scope": "omi/blackboard/pairwise-notation/orientation-surface",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "trigintaduonion-triads.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "trigintaduonion-triads",
+      "title": "Trigintaduonion Ordered Triad Corpus",
+      "kind": "algebra.reference-corpus",
+      "scope": "omi/orientation/trigintaduonion/triad-corpus",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "unicode-lexeme-bitmask-annotation-lattice.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "unicode-lexeme-bitmask-annotation-lattice",
+      "title": "Unicode Lexeme Bitmask Annotation Lattice",
+      "kind": "annotation.unicode-bitmask-lattice",
+      "scope": "omi/annotation/unicode/lexeme",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "universal-closure-coding.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "universal-closure-coding",
+      "title": "Universal Closure Coding for 64-Ion Blackboard Pairing",
+      "kind": "coding.universal-closure-law",
+      "scope": "omi/coding/closure/blackboard",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    },
+    {
+      "file": "wordnet-prolog-semantic-grounding.omilisp",
+      "current_class": "partially-eligible",
+      "sid": "wordnet-prolog-semantic-grounding",
+      "title": "WordNet / Prolog Semantic Grounding Adapter",
+      "kind": "semantic.grounding-adapter",
+      "scope": "omi/semantic/grounding/adapter",
+      "missing_fields": [
+        "authority"
+      ],
+      "recommended_fix": "Add authority section with (declaration candidate) if promoting; otherwise leave as-is",
+      "target_repo": "both",
+      "safe_generated_sid": "",
+      "should_remain_legacy_module": false,
+      "reason": "Missing only authority section (8/9 criteria met); all other identity/address/scope fields present"
+    }
+  ]
+}
