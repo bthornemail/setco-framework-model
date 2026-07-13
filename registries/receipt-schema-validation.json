@@ -1,0 +1,100 @@
+{
+  "manifest_id": "pass4e-receipt-schema-validation-v0",
+  "runtime_receipt_spec": {
+    "OMI_Receipt (C struct)": {
+      "layer_values[5]": "uint32_t[5] \u2014 Omicron layers 8-12 resolution",
+      "gauge_action": "uint8_t \u2014 low 5 bits of gauge[0]",
+      "path[16]": "uint8_t[16] \u2014 gauge[0..7] + orientation[0..7]",
+      "path_len": "int \u2014 path length",
+      "valid": "int \u2014 must be 1 for verifiable receipt"
+    },
+    "64-bit packed receipt": {
+      "provenance": ":16 \u2014 epoch + sub-epoch (proposing agent)",
+      "steps": ":8 \u2014 ticks in Fano resolution",
+      "LL": ":8 \u2014 lane label / Fano plane point",
+      "NN": ":16 \u2014 antecedent (input column)",
+      "MM": ":16 \u2014 consequent (output column)"
+    }
+  },
+  "candidate_receipt_fields": {
+    "receipt_id": "unique receipt identifier (hash-based)",
+    "sid": "declaration SID being receipted",
+    "file": "source file path",
+    "title": "declaration title",
+    "kind": "declaration kind",
+    "scope": "{fs, gs, rs, us} \u2014 scope quadruple",
+    "promotion_class": "fully-eligible | partially-eligible | legacy-module",
+    "adjudication": "promote-candidate | hold-for-review | classify-legacy",
+    "criteria_met": "number of criteria met out of 9",
+    "criteria_detail": "dict of individual criteria",
+    "receipt_authority": "adjudication-pass",
+    "receipt_status": "candidate",
+    "receipt_phase": "pass-4c",
+    "source_corpus": "path to source corpus",
+    "target_repo": "setco-framework-model | omi-object-model"
+  },
+  "field_mapping": {
+    "receipt_id": {
+      "runtime_equivalent": "none (receipt_id is adjudication-layer only)",
+      "gap": "No runtime equivalent \u2014 receipt_id is a registry-layer concept",
+      "action": "Keep as registry index. Not lowered to runtime."
+    },
+    "sid": {
+      "runtime_equivalent": "none (runtime uses envelope bytes, not SIDs)",
+      "gap": "Runtime operates on 512-bit envelopes, not symbolic SIDs",
+      "action": "Map sid \u2192 envelope identity during lowering. Not yet implemented."
+    },
+    "scope.gs": {
+      "runtime_equivalent": "layer_values[10] (Declaration layer, mod 10)",
+      "gap": "Runtime resolves declaration layer from envelope bytes, not from scope.gs",
+      "action": "scope.gs is a classification hint, not a runtime value. Compatible."
+    },
+    "adjudication": {
+      "runtime_equivalent": "issue_receipt (Coq: Pending \u2192 Accepted)",
+      "gap": "Runtime issues receipts on state transitions. Adjudication is a pre-runtime concept.",
+      "action": "Map promote-candidate \u2192 Pending. Runtime acceptance happens downstream."
+    },
+    "promotion_class": {
+      "runtime_equivalent": "none (runtime does not classify promotion eligibility)",
+      "gap": "Promotion eligibility is a build-pass concept, not a runtime concept",
+      "action": "Keep as build-pass metadata. Not lowered to runtime."
+    },
+    "criteria_detail": {
+      "runtime_equivalent": "none (runtime does not track build criteria)",
+      "gap": "Build criteria are build-pass metadata, not runtime state",
+      "action": "Keep as build-pass metadata. Not lowered to runtime."
+    }
+  },
+  "compatibility": {
+    "lowerable_fields": [
+      "scope.fs/gs/rs/us \u2192 can map to Omicron layer resolution",
+      "kind \u2192 can map to envelope classification",
+      "adjudication \u2192 maps to receipt lifecycle state"
+    ],
+    "non_lowerable_fields": [
+      "receipt_id \u2014 registry-layer concept",
+      "receipt_authority \u2014 build-pass concept",
+      "receipt_phase \u2014 build-pass concept",
+      "criteria_detail \u2014 build-pass metadata",
+      "source_corpus \u2014 build-pass metadata",
+      "target_repo \u2014 build-pass metadata"
+    ],
+    "gaps": [
+      "Runtime expects 512-bit envelope, not symbolic SID",
+      "Runtime computes Omicron layers from envelope bytes, not from scope fields",
+      "Runtime issues receipts on state transitions, not on promotion eligibility",
+      "Runtime receipt is 64-bit packed, not JSON",
+      "Lowering MUST NOT create receipts (per LOWERING.md)"
+    ],
+    "verdict": "PASS_WITH_CAVEATS",
+    "caveat": "Candidate receipts are build-pass records, not runtime receipts. They must be lowered through the OMI-Lisp \u2192 Compiler \u2192 ISA pipeline before they become runtime receipts. The current schema is compatible as an upstream record but must undergo lowering to become runtime receipts."
+  },
+  "summary": {
+    "runtime_fields_count": 10,
+    "candidate_fields_count": 15,
+    "lowerable": 3,
+    "non_lowerable": 6,
+    "gaps": 5,
+    "verdict": "PASS_WITH_CAVEATS"
+  }
+}
