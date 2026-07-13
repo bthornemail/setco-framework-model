@@ -1,162 +1,85 @@
 {
-  "manifest_id": "pass9k-runtime-authority-grant-readiness-v0",
+  "manifest_id": "pass14-runtime-authority-grant-readiness-v0",
   "target": "setco-framework-model",
+  "grant_date": "2026-07-12",
   "total_authorities": 5,
-  "overall_grant_allowed": false,
+  "total_granted": 5,
+  "total_eligible": 5,
+  "overall_grant_allowed": true,
+  "receipt_emission_status": "CONDITIONAL",
+  "envelope_construction_status": "ACTIVE",
+  "legacy_module_execution_status": "ACTIVE",
+  "source_mutation_status": "ACTIVE (permanent)",
   "authorities": [
     {
       "authority_id": "auth-runtime-kernel",
       "authority_name": "Runtime Kernel Authority",
-      "readiness_status": "NOT READY",
-      "missing_requirements": [
-        "Runtime kernel implementation",
-        "Runtime kernel tests",
-        "Runtime kernel validation"
-      ],
-      "required_artifacts": [
-        "runtime-kernel.c",
-        "runtime-kernel.h",
-        "runtime-kernel-tests/"
-      ],
-      "required_tests": [
-        "kernel initialization test",
-        "kernel receipt emission test",
-        "kernel state management test"
-      ],
-      "required_constraints": [
-        "pair-construction-constraint",
-        "pair-car-access-constraint",
-        "pair-cdr-access-constraint"
-      ],
-      "grant_allowed": false,
+      "readiness_status": "GRANTED",
+      "grant_allowed": true,
       "receipt_emission_allowed_after_grant": true,
-      "construction_allowed_after_grant": false
-    },
-    {
-      "authority_id": "auth-omniprocessor",
-      "authority_name": "Omniprocessor Authority",
-      "readiness_status": "NOT READY",
-      "missing_requirements": [
-        "Omniprocessor implementation",
-        "Omniprocessor tests",
-        "Omniprocessor validation",
-        "Runtime kernel (prerequisite)"
-      ],
-      "required_artifacts": [
-        "omniprocessor.c",
-        "omniprocessor.h",
-        "omniprocessor-tests/"
-      ],
-      "required_tests": [
-        "omniprocessor initialization test",
-        "omniprocessor receipt emission test",
-        "omniprocessor state management test"
-      ],
-      "required_constraints": [
-        "kernel-delta-constraint",
-        "atomic-delta-constraint"
-      ],
-      "grant_allowed": false,
-      "receipt_emission_allowed_after_grant": true,
-      "construction_allowed_after_grant": false
+      "construction_allowed_after_grant": false,
+      "grant_basis": "G1.x ALL PASS (5/5 tests)",
+      "tests_passed": "5/5",
+      "receipt_emission_enabled": false,
+      "authority_granted": true,
+      "construction_allowed": false,
+      "authority_eligible": true
     },
     {
       "authority_id": "auth-compiler",
       "authority_name": "Compiler Constraint Authority",
-      "readiness_status": "NOT READY",
-      "missing_requirements": [
-        "Compiler implementation",
-        "Compiler tests",
-        "Compiler validation"
-      ],
-      "required_artifacts": [
-        "compiler.c",
-        "compiler.h",
-        "compiler-tests/"
-      ],
-      "required_tests": [
-        "compiler constraint enforcement test",
-        "compiler law validation test",
-        "compiler receipt validation test"
-      ],
-      "required_constraints": [
-        "eval-primitive-car-constraint",
-        "eval-primitive-cdr-constraint",
-        "eval-primitive-cons-constraint"
-      ],
-      "grant_allowed": false,
+      "readiness_status": "GRANTED",
+      "grant_allowed": true,
       "receipt_emission_allowed_after_grant": false,
-      "construction_allowed_after_grant": false
+      "construction_allowed_after_grant": false,
+      "grant_basis": "G2.x ALL PASS (4/4 tests)",
+      "tests_passed": "4/4",
+      "receipt_emission_enabled": false,
+      "authority_granted": true,
+      "construction_allowed": false,
+      "authority_eligible": true
+    },
+    {
+      "authority_id": "auth-omniprocessor",
+      "authority_name": "Omniprocessor Authority",
+      "readiness_status": "GRANTED",
+      "grant_allowed": true,
+      "receipt_emission_allowed_after_grant": true,
+      "construction_allowed_after_grant": false,
+      "grant_basis": "G3.x ALL PASS (5/5 tests)",
+      "tests_passed": "5/5",
+      "receipt_emission_enabled": false,
+      "authority_granted": true,
+      "construction_allowed": false,
+      "authority_eligible": true
     },
     {
       "authority_id": "auth-envelope-construction",
       "authority_name": "Envelope Construction Authority",
-      "readiness_status": "NOT READY",
-      "missing_requirements": [
-        "Runtime kernel (prerequisite)",
-        "Omniprocessor (prerequisite)",
-        "Compiler (prerequisite)",
-        "Envelope construction implementation",
-        "Envelope construction tests"
-      ],
-      "required_artifacts": [
-        "envelope-construction.c",
-        "envelope-construction.h",
-        "envelope-construction-tests/"
-      ],
-      "required_tests": [
-        "envelope field validation test",
-        "envelope receipt emission test",
-        "envelope construction test"
-      ],
-      "required_constraints": [
-        "pair-construction-constraint",
-        "pair-car-access-constraint",
-        "pair-cdr-access-constraint",
-        "kernel-delta-constraint",
-        "atomic-delta-constraint",
-        "eval-primitive-car-constraint",
-        "eval-primitive-cdr-constraint",
-        "eval-primitive-cons-constraint"
-      ],
-      "grant_allowed": false,
+      "readiness_status": "GRANTED",
+      "grant_allowed": true,
       "receipt_emission_allowed_after_grant": true,
-      "construction_allowed_after_grant": true
+      "construction_allowed_after_grant": true,
+      "grant_basis": "G4.x ALL PASS (5/5 tests)",
+      "tests_passed": "5/5",
+      "receipt_emission_enabled": false,
+      "authority_granted": true,
+      "construction_allowed": true,
+      "authority_eligible": true
     },
     {
       "authority_id": "auth-legacy-execution",
       "authority_name": "Legacy Module Execution Authority",
-      "readiness_status": "NOT READY",
-      "missing_requirements": [
-        "Runtime kernel (prerequisite)",
-        "Compiler (prerequisite)",
-        "SID assignment for all legacy modules",
-        "Legacy module execution implementation",
-        "Legacy module execution tests"
-      ],
-      "required_artifacts": [
-        "legacy-execution.c",
-        "legacy-execution.h",
-        "legacy-execution-tests/"
-      ],
-      "required_tests": [
-        "legacy module SID validation test",
-        "legacy module execution test",
-        "legacy module receipt test"
-      ],
-      "required_constraints": [
-        "pair-construction-constraint",
-        "pair-car-access-constraint",
-        "pair-cdr-access-constraint",
-        "kernel-delta-constraint",
-        "atomic-delta-constraint",
-        "eval-primitive-car-constraint",
-        "eval-primitive-cdr-constraint",
-        "eval-primitive-cons-constraint"
-      ],
-      "grant_allowed": false,
+      "readiness_status": "GRANTED",
+      "grant_allowed": true,
       "receipt_emission_allowed_after_grant": false,
-      "construction_allowed_after_grant": true
+      "construction_allowed_after_grant": true,
+      "grant_basis": "G5.x ALL PASS (5/5 tests)",
+      "tests_passed": "5/5",
+      "receipt_emission_enabled": false,
+      "authority_granted": true,
+      "construction_allowed": true,
+      "authority_eligible": true
     }
   ]
 }

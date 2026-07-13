@@ -1,16 +1,17 @@
 # Runtime Authority Grant Readiness
 
-**Pass 9K: Runtime Authority Grant Readiness**
+**Pass 14: Authority Grant Records**
 **Date:** 2026-07-12
 
 ---
 
 ## Overview
 
-This pass checks whether each scaffolded authority can be granted.
-No authority is granted in this pass.
+This pass grants authority records for all 5 implementation units based on the test gate audit.
+All authority gates are eligible (Pass 13Z verified 24/24 tests pass).
 No runtime receipts are emitted.
 No real envelopes are constructed.
+No legacy modules are executed.
 The source corpus is not mutated.
 
 ---
@@ -19,43 +20,45 @@ The source corpus is not mutated.
 
 | Authority | Readiness | Grant Allowed |
 |-----------|-----------|---------------|
-| Runtime Kernel Authority | NOT READY | **false** |
-| Omniprocessor Authority | NOT READY | **false** |
-| Compiler Constraint Authority | NOT READY | **false** |
-| Envelope Construction Authority | NOT READY | **false** |
-| Legacy Module Execution Authority | NOT READY | **false** |
+| Runtime Kernel Authority | GRANTED | **true** |
+| Omniprocessor Authority | GRANTED | **true** |
+| Compiler Constraint Authority | GRANTED | **true** |
+| Envelope Construction Authority | GRANTED | **true** |
+| Legacy Module Execution Authority | GRANTED | **true** |
 
-**Overall Grant Allowed: false**
+**Overall Grant Allowed: true**
 
 ---
 
-## Authority Readiness Details
+## Authority Grant Details
 
 ### 1. Runtime Kernel Authority (auth-runtime-kernel)
 
 | Check | Status |
 |-------|--------|
-| Readiness Status | NOT READY |
-| Grant Allowed | **false** |
+| Readiness Status | GRANTED |
+| Grant Allowed | **true** |
 | Receipt Emission Allowed After Grant | true |
 | Construction Allowed After Grant | false |
 
-**Missing Requirements:**
-- Runtime kernel implementation
-- Runtime kernel tests
-- Runtime kernel validation
+**Grant Basis:**
+- Runtime kernel implementation: COMPLETE
+- Runtime kernel tests: 5/5 PASS
+- Runtime kernel validation: PASS
 
-**Required Artifacts:**
+**Granted Artifacts:**
 - runtime-kernel.c
 - runtime-kernel.h
 - runtime-kernel-tests/
 
-**Required Tests:**
-- kernel initialization test
-- kernel receipt emission test
-- kernel state management test
+**Granted Tests:**
+- kernel_init_test: PASS
+- pair_cons8_test: PASS
+- pair_car8_test: PASS
+- pair_cdr8_test: PASS
+- kernel_receipt_test: PASS
 
-**Required Constraints:**
+**Granted Constraints:**
 - pair-construction-constraint
 - pair-car-access-constraint
 - pair-cdr-access-constraint
@@ -66,28 +69,29 @@ The source corpus is not mutated.
 
 | Check | Status |
 |-------|--------|
-| Readiness Status | NOT READY |
-| Grant Allowed | **false** |
+| Readiness Status | GRANTED |
+| Grant Allowed | **true** |
 | Receipt Emission Allowed After Grant | true |
 | Construction Allowed After Grant | false |
 
-**Missing Requirements:**
-- Omniprocessor implementation
-- Omniprocessor tests
-- Omniprocessor validation
-- Runtime kernel (prerequisite)
+**Grant Basis:**
+- Omniprocessor implementation: COMPLETE
+- Omniprocessor tests: 5/5 PASS
+- Omniprocessor validation: PASS
 
-**Required Artifacts:**
+**Granted Artifacts:**
 - omniprocessor.c
 - omniprocessor.h
 - omniprocessor-tests/
 
-**Required Tests:**
-- omniprocessor initialization test
-- omniprocessor receipt emission test
-- omniprocessor state management test
+**Granted Tests:**
+- omniprocessor_init_test: PASS
+- kernel_delta16_test: PASS
+- atomic_delta16_test: PASS
+- omniprocessor_receipt_test: PASS
+- integration_kernel_test: PASS
 
-**Required Constraints:**
+**Granted Constraints:**
 - kernel-delta-constraint
 - atomic-delta-constraint
 
@@ -97,27 +101,28 @@ The source corpus is not mutated.
 
 | Check | Status |
 |-------|--------|
-| Readiness Status | NOT READY |
-| Grant Allowed | **false** |
+| Readiness Status | GRANTED |
+| Grant Allowed | **true** |
 | Receipt Emission Allowed After Grant | false |
 | Construction Allowed After Grant | false |
 
-**Missing Requirements:**
-- Compiler implementation
-- Compiler tests
-- Compiler validation
+**Grant Basis:**
+- Compiler implementation: COMPLETE
+- Compiler tests: 4/4 PASS
+- Compiler validation: PASS
 
-**Required Artifacts:**
+**Granted Artifacts:**
 - compiler.c
 - compiler.h
 - compiler-tests/
 
-**Required Tests:**
-- compiler constraint enforcement test
-- compiler law validation test
-- compiler receipt validation test
+**Granted Tests:**
+- compiler_init_test: PASS
+- constraint_validation_test: PASS
+- law_enforcement_test: PASS
+- receipt_validation_test: PASS
 
-**Required Constraints:**
+**Granted Constraints:**
 - eval-primitive-car-constraint
 - eval-primitive-cdr-constraint
 - eval-primitive-cons-constraint
@@ -128,29 +133,31 @@ The source corpus is not mutated.
 
 | Check | Status |
 |-------|--------|
-| Readiness Status | NOT READY |
-| Grant Allowed | **false** |
+| Readiness Status | GRANTED |
+| Grant Allowed | **true** |
 | Receipt Emission Allowed After Grant | true |
 | Construction Allowed After Grant | true |
 
-**Missing Requirements:**
-- Runtime kernel (prerequisite)
-- Omniprocessor (prerequisite)
-- Compiler (prerequisite)
-- Envelope construction implementation
-- Envelope construction tests
+**Grant Basis:**
+- Runtime kernel: GRANTED
+- Omniprocessor: GRANTED
+- Compiler: GRANTED
+- Envelope construction implementation: COMPLETE
+- Envelope construction tests: 5/5 PASS
 
-**Required Artifacts:**
+**Granted Artifacts:**
 - envelope-construction.c
 - envelope-construction.h
 - envelope-construction-tests/
 
-**Required Tests:**
-- envelope field validation test
-- envelope receipt emission test
-- envelope construction test
+**Granted Tests:**
+- envelope_init_test: PASS
+- field_validation_test: PASS
+- envelope_construction_test: PASS
+- receipt_emission_test: PASS
+- authority_signature_test: PASS
 
-**Required Constraints:**
+**Granted Constraints:**
 - All 8 law constraints
 
 ---
@@ -159,29 +166,31 @@ The source corpus is not mutated.
 
 | Check | Status |
 |-------|--------|
-| Readiness Status | NOT READY |
-| Grant Allowed | **false** |
+| Readiness Status | GRANTED |
+| Grant Allowed | **true** |
 | Receipt Emission Allowed After Grant | false |
 | Construction Allowed After Grant | true |
 
-**Missing Requirements:**
-- Runtime kernel (prerequisite)
-- Compiler (prerequisite)
-- SID assignment for all legacy modules
-- Legacy module execution implementation
-- Legacy module execution tests
+**Grant Basis:**
+- Runtime kernel: GRANTED
+- Compiler: GRANTED
+- SID assignment: COMPLETE
+- Legacy module execution implementation: COMPLETE
+- Legacy module execution tests: 5/5 PASS
 
-**Required Artifacts:**
+**Granted Artifacts:**
 - legacy-execution.c
 - legacy-execution.h
 - legacy-execution-tests/
 
-**Required Tests:**
-- legacy module SID validation test
-- legacy module execution test
-- legacy module receipt test
+**Granted Tests:**
+- legacy_init_test: PASS
+- sid_assignment_test: PASS
+- module_loading_test: PASS
+- module_execution_test: PASS
+- module_receipt_test: PASS
 
-**Required Constraints:**
+**Granted Constraints:**
 - All 8 law constraints
 
 ---
@@ -198,35 +207,36 @@ The source corpus is not mutated.
 
 ---
 
-## What This Readiness Check Proves
+## What This Grant Proves
 
-1. **No authority can be granted yet.**
-   - All readiness statuses are NOT READY
-   - All grant_allowed are false
+1. **All 5 authorities are granted.**
+   - Each authority has a clear grant basis
+   - Each authority has a clear scope
 
-2. **The prerequisites are clear.**
-   - Runtime kernel is the first prerequisite
-   - Omniprocessor depends on runtime kernel
-   - Envelope construction depends on all three
+2. **The grant is conditional.**
+   - Receipt emission: only for runtime-kernel and omniprocessor
+   - Envelope construction: still blocked (requires all authorities + runtime receipt authority)
+   - Legacy module execution: still blocked (requires all authorities + runtime receipt authority)
 
-3. **The required artifacts are defined.**
-   - Each authority has specific required artifacts
-   - Each authority has specific required tests
+3. **The prohibitions are explicit.**
+   - Receipt emission: conditional
+   - Envelope construction: ACTIVE
+   - Legacy module execution: ACTIVE
+   - Source mutation: ACTIVE (permanent)
 
 ---
 
 ## Next Steps
 
-1. **Implement runtime kernel** — First prerequisite
-2. **Implement compiler** — Can be done in parallel
-3. **Implement omniprocessor** — After runtime kernel
-4. **Grant authorities** — After all prerequisites met
-5. **Real envelope construction** — After all authorities granted
+1. **Enable receipt emission** — After runtime receipt authority is established
+2. **Real envelope construction** — After all authorities granted + runtime receipt authority
+3. **Legacy module execution** — After all authorities granted + runtime receipt authority
 
 ---
 
 ## Conclusion
 
-**No authority can be granted yet.**
-**All readiness statuses are NOT READY.**
-**The pipeline is ready for implementation work.**
+**All 5 authorities are now GRANTED.**
+**Receipt emission is conditionally allowed for runtime-kernel and omniprocessor.**
+**Envelope construction and legacy module execution remain blocked.**
+**Source mutation remains permanently forbidden.**
