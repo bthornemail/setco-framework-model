@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SETCO Target",
+  "description": "A build target in the meta-compilation",
+  "type": "object",
+  "required": ["id", "repo", "role"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "repo": {
+      "type": "string",
+      "enum": ["setco-framework-model", "omi-object-model"]
+    },
+    "role": {
+      "type": "string"
+    },
+    "classification_target": {
+      "type": "string",
+      "enum": ["setco", "omi", "both"]
+    }
+  }
+}

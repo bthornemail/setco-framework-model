@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SETCO Promotion",
+  "description": "Promotion status of a classified claim",
+  "type": "object",
+  "properties": {
+    "current": {
+      "type": "string",
+      "enum": ["P4_metaphor", "P2_model", "P1_finite_check", "P0_proof"],
+      "description": "Current adjudication status"
+    },
+    "next_step": {
+      "type": "string",
+      "description": "What is needed to advance to the next level"
+    },
+    "target": {
+      "type": "string",
+      "enum": ["proved", "implemented", "defined_model", "interpretation"]
+    }
+  }
+}

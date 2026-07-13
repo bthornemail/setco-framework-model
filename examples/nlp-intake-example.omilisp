@@ -1,0 +1,17 @@
+;; nlp-intake-example.omilisp
+;; Example: classifying an NLP intake artifact
+;; External natural language enters SETCO classification before OMI notation
+
+(claim
+  (id . nlp-intake-example)
+  (type . interpretation)
+  (statement . "External documentation is classified by SETCO before reaching OMI")
+  (source . "setco-framework-model/NLP-INTAKE.md")
+  (classification
+    (geometry . face)
+    (mode . phase)
+    (grammar . adjective)
+    (construction . interpretation))
+  (adjudication
+    (status . P4_metaphor)
+    (next_step . "ground in actual NLP pipeline implementation")))

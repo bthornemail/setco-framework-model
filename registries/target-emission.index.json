@@ -1,0 +1,113 @@
+{
+  "manifest_id": "setco-omi-meta-compile-v0",
+  "pass": 1,
+  "targets": {
+    "setco-framework-model": {
+      "root_files": [
+        "AGENTS.md",
+        "AUTHORITY-BOUNDARY.md",
+        "CHARTER.md",
+        "GLOSSARY.md",
+        "MANIFEST.md",
+        "META-COMPILATION.md",
+        "METHOD.md",
+        "NLP-INTAKE.md",
+        "PRINCIPLES.md",
+        "README.md",
+        "REPO-MAP.md"
+      ],
+      "docs": [
+        "authority-boundary.md",
+        "blackboard-canvas.md",
+        "build-targets.md",
+        "canonization-adjudication.md",
+        "classification-grammar.md",
+        "external-language-surfaces.md",
+        "first-principles.md",
+        "hypercube-graph-methodology.md",
+        "node-edge-face.md",
+        "noun-verb-adjective.md",
+        "outside-in-framework.md",
+        "promotion-propagation.md",
+        "setco-and-omi.md",
+        "state-phase-transform.md"
+      ],
+      "schemas": [
+        "artifact.schema.json",
+        "claim.schema.json",
+        "classification.schema.json",
+        "manifest.schema.json",
+        "promotion.schema.json",
+        "target.schema.json"
+      ],
+      "examples": [
+        "nlp-intake-example.omilisp",
+        "node-edge-face-example.omilisp",
+        "null-ring.claim.omilisp",
+        "omi-axioms-proof.claim.omilisp",
+        "omi-canvas-type-engine.claim.omilisp",
+        "omi-isa-runtime.claim.omilisp"
+      ],
+      "registries": [
+        "source-corpus.index.md",
+        "source-corpus.index.json",
+        "target-emission.index.md",
+        "target-emission.index.json",
+        "unclassified.index.md"
+      ]
+    },
+    "omi-object-model": {
+      "root_files": [
+        "AGENTS.md",
+        "AUTHORITY-BOUNDARY.md",
+        "CHARTER.md",
+        "GLOSSARY.md",
+        "MANIFEST.md",
+        "METATRON.md",
+        "NOTATION.md",
+        "OMI-LISP.md",
+        "OMI-PORT.md",
+        "OMICRON.md",
+        "OMNICRON.md",
+        "PRINCIPLES.md",
+        "README.md",
+        "TETRAGRAMMATRON.md"
+      ],
+      "docs": [
+        "deterministic-core.md",
+        "first-principles.md",
+        "gauge-ring.md",
+        "metatron-transposition.md",
+        "null-ring.md",
+        "object-address-relation.md",
+        "omi-lisp-declaration-surface.md",
+        "omi-notation.md",
+        "omi-port-declaration-surface.md",
+        "omicron-null-byte-ring.md",
+        "omnicron-resolver-interface.md",
+        "projection-boundary.md",
+        "tetragrammatron-governor.md",
+        "unary-sign-relations.md"
+      ],
+      "declarations": [
+        "gauge-ring.omilisp",
+        "metatron-core.omilisp",
+        "null-ring.omilisp",
+        "omi-lisp-core.omilisp",
+        "omi-notation.omilisp",
+        "omi-port-core.omilisp",
+        "omicron-core.omilisp",
+        "omnicron-core.omilisp",
+        "tetragrammatron-boundary.omilisp"
+      ],
+      "examples": [
+        "f0-gauge.omilisp",
+        "fdelta-gauge.omilisp",
+        "full-notation-null.omilisp",
+        "null-null.omilisp",
+        "omi-imo-surface.omilisp",
+        "unary-8-tuple.omilisp"
+      ]
+    }
+  }
+}

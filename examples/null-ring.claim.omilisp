@@ -1,0 +1,19 @@
+;; null-ring.claim.omilisp
+;; Claim: The Null Ring is part of the OMI closure model.
+;; Classification: node, state, noun, rule
+;; Adjudication: P2 (defined_model)
+;; Authority: defined_model — allowed to define, not to prove
+
+(claim
+  (id . null-ring-closure)
+  (type . rule)
+  (statement . "The folded null seed (NULL . NULL) supplies the OMI closure model")
+  (source . "omi-canon/docs/OMI, Omnicron, Tetragrammatron, Metatron, and the Full Notation Hidden in NULL . NULL.md")
+  (classification
+    (geometry . node)
+    (mode . state)
+    (grammar . noun)
+    (construction . rule))
+  (adjudication
+    (status . P2_model)
+    (next_step . "connect to proof or executable witness")))

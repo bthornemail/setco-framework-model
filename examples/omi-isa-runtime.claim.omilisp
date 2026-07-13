@@ -1,0 +1,19 @@
+;; omi-isa-runtime.claim.omilisp
+;; Claim: omi-isa is the executable artifact rail
+;; Classification: edge, transform, verb, implementation
+;; Adjudication: P2 (defined_model)
+;; Authority: defined_model — rail exists, execution status pending
+
+(claim
+  (id . omi-isa-runtime)
+  (type . implementation)
+  (statement . "omi-isa witnesses executable OMI behavior via C/firmware")
+  (source . "omi-canon/docs/SETCO From First Principles.md")
+  (classification
+    (geometry . edge)
+    (mode . transform)
+    (grammar . verb)
+    (construction . implementation))
+  (adjudication
+    (status . P2_model)
+    (next_step . "verify firmware builds and runs on target")))

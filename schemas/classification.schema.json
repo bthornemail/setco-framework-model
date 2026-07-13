@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SETCO Classification",
+  "description": "Multi-axis classification of a claim or artifact",
+  "type": "object",
+  "properties": {
+    "geometry": {
+      "type": "string",
+      "enum": ["node", "edge", "face"],
+      "description": "node=state=noun, edge=transform=verb, face=phase=adjective"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["state", "transform", "phase"]
+    },
+    "grammar": {
+      "type": "string",
+      "enum": ["noun", "verb", "adjective"]
+    },
+    "construction": {
+      "type": "string",
+      "enum": ["rule", "fact", "algorithm", "proof", "proposal", "implementation", "projection", "interpretation", "artifact", "adapter", "application_surface"]
+    },
+    "epistemic": {
+      "type": "string",
+      "enum": ["KK", "KU", "UK", "UU"]
+    },
+    "adjudication": {
+      "type": "string",
+      "enum": ["P0", "P1", "P2", "P3", "P4"]
+    },
+    "implementation": {
+      "type": "string",
+      "enum": ["proved", "implemented", "defined_model", "interpretation"]
+    },
+    "projection": {
+      "type": "string",
+      "enum": ["impotent", "innocuous", "implementation_promoted"]
+    },
+    "interface": {
+      "type": "string",
+      "enum": ["omi-notation", "omi-lisp", "omi-port", "omi-configuration"]
+    },
+    "dimensional": {
+      "type": "string",
+      "enum": ["point", "line", "plane", "space", "hyperspace"]
+    }
+  }
+}
