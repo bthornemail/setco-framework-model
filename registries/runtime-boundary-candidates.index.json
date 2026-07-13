@@ -1,0 +1,2375 @@
+{
+  "manifest_id": "pass9b-runtime-boundary-candidates-v0",
+  "target": "setco-framework-model",
+  "total_files_in_corpus": 4090,
+  "total_candidates": 234,
+  "not_in_boundary": 3856,
+  "by_reason": {
+    "extended-receipt-chain": 35,
+    "no-sid-legacy-module": 9,
+    "mentions-omicron": 89,
+    "mentions-state": 13,
+    "mentions-gauge": 20,
+    "mentions-authority": 13,
+    "mentions-runtime": 48,
+    "mentions-envelope": 6,
+    "has-laws": 1
+  },
+  "by_classification": {
+    "requires-envelope": 41,
+    "legacy-runtime-module": 9,
+    "blocked-for-review": 150,
+    "requires-receipt-authority": 34
+  },
+  "candidates": [
+    {
+      "file": "addr128.omilisp",
+      "title": "Addr128 Implementation Overview",
+      "sid": "addr128",
+      "kind": "locator.graph",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-browser-smoke-court.omilisp",
+      "title": "Autonomous World UX / Browser Smoke Court",
+      "sid": "autonomous-world-browser-smoke-court",
+      "kind": "world.browser-smoke-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-builder-model.omilisp",
+      "title": "Autonomous World Builder Model",
+      "sid": "autonomous-world-builder-model",
+      "kind": "world.autonomous-builder-model",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-interjection-overlay.omilisp",
+      "title": "Autonomous World Interjection Overlay",
+      "sid": "autonomous-world-interjection-overlay",
+      "kind": "world.interjection-overlay",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; overlay=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-live-renderer.omilisp",
+      "title": "Autonomous World Live Renderer",
+      "sid": "autonomous-world-live-renderer",
+      "kind": "world.live-renderer",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; render=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-live-transport-adapter-court.omilisp",
+      "title": "Autonomous World Live Transport Adapter Court",
+      "sid": "autonomous-world-live-transport-adapter-court",
+      "kind": "world.live-transport-adapter-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; transport-plan=pending; transport-event=pending; processing=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-merge-reconciliation-court.omilisp",
+      "title": "Autonomous World Merge / Reconciliation Court",
+      "sid": "autonomous-world-merge-reconciliation-court",
+      "kind": "world.merge-reconciliation-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; merge-candidate=pending; conflict=pending; admission-decision=pending; merged-world=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-overlay-admission-court.omilisp",
+      "title": "Autonomous World Overlay Admission Court",
+      "sid": "autonomous-world-overlay-admission-court",
+      "kind": "world.overlay-admission-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; candidate=pending; decision=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-package-sync-court.omilisp",
+      "title": "Autonomous World Package Sync Court",
+      "sid": "autonomous-world-package-sync-court",
+      "kind": "world.package-sync-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; history-edge=pending; snapshot=pending; local-admission=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-peer-exchange-protocol.omilisp",
+      "title": "Autonomous World Peer Exchange Protocol",
+      "sid": "autonomous-world-peer-exchange-protocol",
+      "kind": "world.peer-exchange-protocol",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; peer=pending; offer=pending; exchange=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-pubsub-subscription-court.omilisp",
+      "title": "Autonomous World Pub/Sub Subscription Court",
+      "sid": "autonomous-world-pubsub-subscription-court",
+      "kind": "world.pubsub-subscription-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; subscription=pending; evaluation=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-transport-availability-court.omilisp",
+      "title": "Autonomous World Transport Availability Court",
+      "sid": "autonomous-world-transport-availability-court",
+      "kind": "world.transport-availability-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; availability=pending; repair-plan=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-transport-checkpoint-court.omilisp",
+      "title": "Autonomous World Transport Checkpoint Court",
+      "sid": "autonomous-world-transport-checkpoint-court",
+      "kind": "world.transport-checkpoint-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; checkpoint=pending; resume=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-transport-compaction-court.omilisp",
+      "title": "Autonomous World Transport Compaction Court",
+      "sid": "autonomous-world-transport-compaction-court",
+      "kind": "world.transport-compaction-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; compaction=pending; compaction-resume=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-transport-repair-court.omilisp",
+      "title": "Autonomous World Transport Repair Court",
+      "sid": "autonomous-world-transport-repair-court",
+      "kind": "world.transport-repair-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; repair-request=pending; repair-payload=pending; repair-result=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-transport-replay-court.omilisp",
+      "title": "Autonomous World Transport Replay Court",
+      "sid": "autonomous-world-transport-replay-court",
+      "kind": "world.transport-replay-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; transport-log=pending; replay-entry=pending; replay=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-transport-request-scheduler-court.omilisp",
+      "title": "Autonomous World Transport Request Scheduler Court",
+      "sid": "autonomous-world-transport-request-scheduler-court",
+      "kind": "world.transport-request-scheduler-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; schedule=pending; request=pending",
+      "laws": []
+    },
+    {
+      "file": "autonomous-world-version-history-court.omilisp",
+      "title": "Autonomous World Version History Court",
+      "sid": "autonomous-world-version-history-court",
+      "kind": "world.version-history-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; history-edge=pending; history-graph=pending",
+      "laws": []
+    },
+    {
+      "file": "boundary-geometry-constitution.omilisp",
+      "title": "Boundary Geometry Constitution",
+      "sid": "boundary-geometry-constitution",
+      "kind": "constitutional.doctrine",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "canon-operational/envelope-bitboard.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "canon-operational/omicron-receipt.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "canon-operational/omiom.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "canon-operational/orbit.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "canon-operational/semantic-lattice.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "canon-operational/sense-pg.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "distributed-adapter-transport-registry.omilisp",
+      "title": "Distributed Adapter Transport Registry",
+      "sid": "distributed-adapter-transport-registry",
+      "kind": "runtime.adapter-transport-registry",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "metatron-operational/metatron-witness.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "narrative-series.omilisp",
+      "title": "When Wisdom, Law, and the Tribe Sat Down Together",
+      "sid": "narrative-series",
+      "kind": "narrative.world",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "network-bootable-runtime-resolver.omilisp",
+      "title": "Network-Bootable OMI Runtime Resolver",
+      "sid": "network-bootable-runtime-resolver",
+      "kind": "runtime.resolver-doctrine",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/1-foundations-1-2-the-omicron-anchors-md.omilisp",
+      "title": "o---o port: 1_FOUNDATIONS/1.2_THE_OMICRON_ANCHORS.md",
+      "sid": "o---o-port.1-foundations-1-2-the-omicron-anchors-md",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/7-canon-7-3-lower-omicron-upper-bidi-md.omilisp",
+      "title": "o---o port: 7_CANON/7.3_LOWER_OMICRON_UPPER_BIDI.md",
+      "sid": "o---o-port.7-canon-7-3-lower-omicron-upper-bidi-md",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-images-architecture-of-verifiable-address-states-png.omilisp",
+      "title": "o---o port: _archive/images/Architecture_of_Verifiable_Address_States.png",
+      "sid": "o---o-port.archive-images-architecture-of-verifiable-address-states-png",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-lower-omicron-hidden-5-and-upper-bidi-docx.omilisp",
+      "title": "o---o port: _archive/publications/Lower Omicron, Hidden 5!, and Upper Bidi.docx",
+      "sid": "o---o-port.archive-publications-lower-omicron-hidden-5-and-upper-bidi-docx",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-lower-omicron-hidden-5-and-upper-bidi-pdf.omilisp",
+      "title": "o---o port: _archive/publications/Lower Omicron, Hidden 5!, and Upper Bidi.pdf",
+      "sid": "o---o-port.archive-publications-lower-omicron-hidden-5-and-upper-bidi-pdf",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-omicron-binary-quadratic-form-docx.omilisp",
+      "title": "o---o port: _archive/publications/Omicron Binary Quadratic Form.docx",
+      "sid": "o---o-port.archive-publications-omicron-binary-quadratic-form-docx",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-omicron-binary-quadratic-form-pdf.omilisp",
+      "title": "o---o port: _archive/publications/Omicron Binary Quadratic Form.pdf",
+      "sid": "o---o-port.archive-publications-omicron-binary-quadratic-form-pdf",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-omicron-cidr-cons-first-principles-docx.omilisp",
+      "title": "o---o port: _archive/publications/Omicron Cidr Cons First Principles.docx",
+      "sid": "o---o-port.archive-publications-omicron-cidr-cons-first-principles-docx",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-omicron-cidr-cons-first-principles-pdf.omilisp",
+      "title": "o---o port: _archive/publications/Omicron Cidr Cons First Principles.pdf",
+      "sid": "o---o-port.archive-publications-omicron-cidr-cons-first-principles-pdf",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-omicron-unified-architecture-pdf.omilisp",
+      "title": "o---o port: _archive/publications/Omicron_Unified_Architecture.pdf",
+      "sid": "o---o-port.archive-publications-omicron-unified-architecture-pdf",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-publications-the-omicron-codex-pdf.omilisp",
+      "title": "o---o port: _archive/publications/The_Omicron_Codex.pdf",
+      "sid": "o---o-port.archive-publications-the-omicron-codex-pdf",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-temp-resolution-the-omicron-object-model-md.omilisp",
+      "title": "o---o port: _archive/temp-resolution/The Omicron Object Model.md",
+      "sid": "o---o-port.archive-temp-resolution-the-omicron-object-model-md",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-temp-resolution-whitepaper-the-240-state-md.omilisp",
+      "title": "o---o port: _archive/temp-resolution/Whitepaper The 240 State.md",
+      "sid": "o---o-port.archive-temp-resolution-whitepaper-the-240-state-md",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-the-omicron-object-model-md.omilisp",
+      "title": "o---o port: _archive/The Omicron Object Model.md",
+      "sid": "o---o-port.archive-the-omicron-object-model-md",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "o---o-port/archive-whitepaper-the-240-state-md.omilisp",
+      "title": "o---o port: _archive/Whitepaper The 240 State.md",
+      "sid": "o---o-port.archive-whitepaper-the-240-state-md",
+      "kind": "o---o.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-axioms-port/coq-gaugetable05-v.omilisp",
+      "title": "omi-axioms port: coq/GaugeTable05.v",
+      "sid": "omi-axioms-port.coq-gaugetable05-v",
+      "kind": "omi-axioms.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/18-gauge-interrupts-md.omilisp",
+      "title": "omi-canon port: 18-GAUGE-INTERRUPTS.md",
+      "sid": "omi-canon-port.18-gauge-interrupts-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-archive-the-omicron-object-model-md.omilisp",
+      "title": "omi-canon port: _archive/00-origin/archive/The Omicron Object Model.md",
+      "sid": "omi-canon-port.archive-00-origin-archive-the-omicron-object-model-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-archive-whitepaper-the-240-state-md.omilisp",
+      "title": "omi-canon port: _archive/00-origin/archive/Whitepaper The 240 State.md",
+      "sid": "omi-canon-port.archive-00-origin-archive-whitepaper-the-240-state-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-images-architecture-of-verifiable-address-states-png.omilisp",
+      "title": "omi-canon port: _archive/00-origin/images/Architecture_of_Verifiable_Address_States.png",
+      "sid": "omi-canon-port.archive-00-origin-images-architecture-of-verifiable-address-states-png",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-lower-omicron-hidden-5-and-upper-bidi-docx.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Lower Omicron, Hidden 5!, and Upper Bidi.docx",
+      "sid": "omi-canon-port.archive-00-origin-publications-lower-omicron-hidden-5-and-upper-bidi-docx",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-lower-omicron-hidden-5-and-upper-bidi-pdf.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Lower Omicron, Hidden 5!, and Upper Bidi.pdf",
+      "sid": "omi-canon-port.archive-00-origin-publications-lower-omicron-hidden-5-and-upper-bidi-pdf",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-omicron-binary-quadratic-form-docx.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Omicron Binary Quadratic Form.docx",
+      "sid": "omi-canon-port.archive-00-origin-publications-omicron-binary-quadratic-form-docx",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-omicron-binary-quadratic-form-pdf.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Omicron Binary Quadratic Form.pdf",
+      "sid": "omi-canon-port.archive-00-origin-publications-omicron-binary-quadratic-form-pdf",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-omicron-cidr-cons-first-principles-docx.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Omicron Cidr Cons First Principles.docx",
+      "sid": "omi-canon-port.archive-00-origin-publications-omicron-cidr-cons-first-principles-docx",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-omicron-cidr-cons-first-principles-pdf.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Omicron Cidr Cons First Principles.pdf",
+      "sid": "omi-canon-port.archive-00-origin-publications-omicron-cidr-cons-first-principles-pdf",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-omicron-unified-architecture-pdf.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/Omicron_Unified_Architecture.pdf",
+      "sid": "omi-canon-port.archive-00-origin-publications-omicron-unified-architecture-pdf",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-publications-the-omicron-codex-pdf.omilisp",
+      "title": "omi-canon port: _archive/00-origin/publications/The_Omicron_Codex.pdf",
+      "sid": "omi-canon-port.archive-00-origin-publications-the-omicron-codex-pdf",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-00-origin-state-md.omilisp",
+      "title": "omi-canon port: _archive/00-origin/STATE.md",
+      "sid": "omi-canon-port.archive-00-origin-state-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-02-doctrine-lower-omicron-upper-bidi-md.omilisp",
+      "title": "omi-canon port: _archive/02-doctrine/LOWER_OMICRON_UPPER_BIDI.md",
+      "sid": "omi-canon-port.archive-02-doctrine-lower-omicron-upper-bidi-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-04-foundations-omicron-as-zero-frame-md.omilisp",
+      "title": "omi-canon port: _archive/04-foundations/OMICRON_AS_ZERO_FRAME.md",
+      "sid": "omi-canon-port.archive-04-foundations-omicron-as-zero-frame-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/archive-04-foundations-the-omicron-anchors-md.omilisp",
+      "title": "omi-canon port: _archive/04-foundations/THE_OMICRON_ANCHORS.md",
+      "sid": "omi-canon-port.archive-04-foundations-the-omicron-anchors-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/constitutional-grid-q6-collaboration-without-hidden-authority-md.omilisp",
+      "title": "omi-canon port: constitutional-grid/Q6-collaboration-without-hidden-authority.md",
+      "sid": "omi-canon-port.constitutional-grid-q6-collaboration-without-hidden-authority-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canon-port/dev-docs-omi-canon-runtime-atlas-md.omilisp",
+      "title": "omi-canon port: dev-docs/OMI Canon Runtime Atlas.md",
+      "sid": "omi-canon-port.dev-docs-omi-canon-runtime-atlas-md",
+      "kind": "omi-canon.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-config-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Config.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-config-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-control-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Control.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-control-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-log-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Log.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-log-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-net-framing-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Net/Framing.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-net-framing-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-net-gossip-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Net/Gossip.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-net-gossip-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-net-gossip-types-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Net/Gossip/Types.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-net-gossip-types-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-node-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Node.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-node-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-server-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Server.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-server-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-runtime-store-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Runtime/Store.hs",
+      "sid": "omi-canvas-port.archive-src-runtime-store-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-snapshot-scheduler-network-authority-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Snapshot/Scheduler/Network/Authority.hs",
+      "sid": "omi-canvas-port.archive-src-snapshot-scheduler-network-authority-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-snapshot-scheduler-network-state-hs.omilisp",
+      "title": "omi-canvas port: archive/src/Snapshot/Scheduler/Network/State.hs",
+      "sid": "omi-canvas-port.archive-src-snapshot-scheduler-network-state-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-src-ulp-runtime-hs.omilisp",
+      "title": "omi-canvas port: archive/src/ULP/Runtime.hs",
+      "sid": "omi-canvas-port.archive-src-ulp-runtime-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-test-networkauthorityspec-hs.omilisp",
+      "title": "omi-canvas port: archive/test/NetworkAuthoritySpec.hs",
+      "sid": "omi-canvas-port.archive-test-networkauthorityspec-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/archive-test-networkstatespec-hs.omilisp",
+      "title": "omi-canvas port: archive/test/NetworkStateSpec.hs",
+      "sid": "omi-canvas-port.archive-test-networkstatespec-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/dev-docs-04-runtime-network-md.omilisp",
+      "title": "omi-canvas port: dev-docs/04-RUNTIME-NETWORK.md",
+      "sid": "omi-canvas-port.dev-docs-04-runtime-network-md",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/src-omi-gauge-hs.omilisp",
+      "title": "omi-canvas port: src/OMI/Gauge.hs",
+      "sid": "omi-canvas-port.src-omi-gauge-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-canvas-port/src-omi-runtime-hs.omilisp",
+      "title": "omi-canvas port: src/OMI/Runtime.hs",
+      "sid": "omi-canvas-port.src-omi-runtime-hs",
+      "kind": "omi-canvas.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-docs-port/2026-07-07-pleth-gauge-difference-of-powers-md.omilisp",
+      "title": "omi-docs port: 2026-07-07-Pleth_Gauge_Difference_of_Powers.md",
+      "sid": "omi-docs-port.2026-07-07-pleth-gauge-difference-of-powers-md",
+      "kind": "omi-docs.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-docs-port/gnomic-omicron-blackboard-evaluation-md.omilisp",
+      "title": "omi-docs port: Gnomic Omicron Blackboard Evaluation.md",
+      "sid": "omi-docs-port.gnomic-omicron-blackboard-evaluation-md",
+      "kind": "omi-docs.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-docs-port/omi-relational-access-envelope-md.omilisp",
+      "title": "omi-docs port: OMI-RELATIONAL-ACCESS-ENVELOPE.md",
+      "sid": "omi-docs-port.omi-relational-access-envelope-md",
+      "kind": "omi-docs.source-candidate",
+      "reason": "mentions-envelope",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/docs-architecture-envelope-spec-md.omilisp",
+      "title": "omi-isa port: docs/architecture/envelope-spec.md",
+      "sid": "omi-isa-port.docs-architecture-envelope-spec-md",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-envelope",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/lib-gauge-exec-c.omilisp",
+      "title": "omi-isa port: lib/gauge_exec.c",
+      "sid": "omi-isa-port.lib-gauge-exec-c",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/lib-gauge-exec-h.omilisp",
+      "title": "omi-isa port: lib/gauge_exec.h",
+      "sid": "omi-isa-port.lib-gauge-exec-h",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/lib-omicron-c.omilisp",
+      "title": "omi-isa port: lib/omicron.c",
+      "sid": "omi-isa-port.lib-omicron-c",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/lib-omicron-h.omilisp",
+      "title": "omi-isa port: lib/omicron.h",
+      "sid": "omi-isa-port.lib-omicron-h",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/media-gnomic-omicron-model-mp4.omilisp",
+      "title": "omi-isa port: media/Gnomic_Omicron_Model.mp4",
+      "sid": "omi-isa-port.media-gnomic-omicron-model-mp4",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/opencode-plans-512bit-envelope-implementation-md.omilisp",
+      "title": "omi-isa port: .opencode/plans/512bit-envelope-implementation.md",
+      "sid": "omi-isa-port.opencode-plans-512bit-envelope-implementation-md",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-envelope",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/test-test-gauge-exec-c.omilisp",
+      "title": "omi-isa port: test/test_gauge_exec.c",
+      "sid": "omi-isa-port.test-test-gauge-exec-c",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-isa-port/test-test-omicron-c.omilisp",
+      "title": "omi-isa port: test/test_omicron.c",
+      "sid": "omi-isa-port.test-test-omicron-c",
+      "kind": "omi-isa.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-lisp-port/archive-omi-lisp-v1-dev-docs-99-build-bootable-runtime-md.omilisp",
+      "title": "omi-lisp port: _archive/omi-lisp-v1/dev-docs/99-build/bootable-runtime.md",
+      "sid": "omi-lisp-port.archive-omi-lisp-v1-dev-docs-99-build-bootable-runtime-md",
+      "kind": "omi-lisp.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-lisp-port/archive-omi-lisp-v1-omi-header8-runtime-c.omilisp",
+      "title": "omi-lisp port: _archive/omi-lisp-v1/omi_header8_runtime.c",
+      "sid": "omi-lisp-port.archive-omi-lisp-v1-omi-header8-runtime-c",
+      "kind": "omi-lisp.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/m4a-deterministic-truth-in-metaverse-build-runtime-1-m4a.omilisp",
+      "title": "omi-media port: m4a/Deterministic_Truth_in_Metaverse_Build_Runtime (1).m4a",
+      "sid": "omi-media-port.m4a-deterministic-truth-in-metaverse-build-runtime-1-m4a",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/m4a-how-omi-protocol-receipts-stop-hallucinated-authority-m4a.omilisp",
+      "title": "omi-media port: m4a/How_OMI_protocol_receipts_stop_hallucinated_authority.m4a",
+      "sid": "omi-media-port.m4a-how-omi-protocol-receipts-stop-hallucinated-authority-m4a",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/m4a-mathematically-proving-truth-with-omicron-m4a.omilisp",
+      "title": "omi-media port: m4a/Mathematically_Proving_Truth_with_Omicron.m4a",
+      "sid": "omi-media-port.m4a-mathematically-proving-truth-with-omicron-m4a",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/m4a-omicron-object-model-and-base-60-math-m4a.omilisp",
+      "title": "omi-media port: m4a/Omicron_Object_Model_and_Base-60_Math.m4a",
+      "sid": "omi-media-port.m4a-omicron-object-model-and-base-60-math-m4a",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/mp4-gnomic-omicron-model-1-mp4.omilisp",
+      "title": "omi-media port: mp4/Gnomic_Omicron_Model (1).mp4",
+      "sid": "omi-media-port.mp4-gnomic-omicron-model-1-mp4",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/mp4-gnomic-omicron-model-2-mp4.omilisp",
+      "title": "omi-media port: mp4/Gnomic_Omicron_Model (2).mp4",
+      "sid": "omi-media-port.mp4-gnomic-omicron-model-2-mp4",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/mp4-gnomic-omicron-model-mp4.omilisp",
+      "title": "omi-media port: mp4/Gnomic_Omicron_Model.mp4",
+      "sid": "omi-media-port.mp4-gnomic-omicron-model-mp4",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/mp4-omicron-binary-quadratic-form-mp4.omilisp",
+      "title": "omi-media port: mp4/Omicron_Binary_Quadratic_Form.mp4",
+      "sid": "omi-media-port.mp4-omicron-binary-quadratic-form-mp4",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/mp4-the-metaverse-build-runtime-1-mp4.omilisp",
+      "title": "omi-media port: mp4/The_Metaverse_Build_Runtime (1).mp4",
+      "sid": "omi-media-port.mp4-the-metaverse-build-runtime-1-mp4",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/mp4-the-omicron-object-model-mp4.omilisp",
+      "title": "omi-media port: mp4/The_Omicron_Object_Model.mp4",
+      "sid": "omi-media-port.mp4-the-omicron-object-model-mp4",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/pdf-omi-gated-runtime-pdf.omilisp",
+      "title": "omi-media port: pdf/OMI_Gated_Runtime.pdf",
+      "sid": "omi-media-port.pdf-omi-gated-runtime-pdf",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/pdf-omicron-build-manifest-pdf.omilisp",
+      "title": "omi-media port: pdf/Omicron_Build_Manifest.pdf",
+      "sid": "omi-media-port.pdf-omicron-build-manifest-pdf",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/pdf-omicron-unified-architecture-pdf.omilisp",
+      "title": "omi-media port: pdf/Omicron_Unified_Architecture.pdf",
+      "sid": "omi-media-port.pdf-omicron-unified-architecture-pdf",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/pdf-the-omicron-blueprint-pdf.omilisp",
+      "title": "omi-media port: pdf/The_Omicron_Blueprint.pdf",
+      "sid": "omi-media-port.pdf-the-omicron-blueprint-pdf",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/pdf-the-omicron-codex-pdf.omilisp",
+      "title": "omi-media port: pdf/The_Omicron_Codex.pdf",
+      "sid": "omi-media-port.pdf-the-omicron-codex-pdf",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/pdf-the-omicron-schematic-pdf.omilisp",
+      "title": "omi-media port: pdf/The_Omicron_Schematic.pdf",
+      "sid": "omi-media-port.pdf-the-omicron-schematic-pdf",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/png-architecture-of-verifiable-address-states-png.omilisp",
+      "title": "omi-media port: png/Architecture_of_Verifiable_Address_States.png",
+      "sid": "omi-media-port.png-architecture-of-verifiable-address-states-png",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/png-omi-reversing-geometric-authority-png.omilisp",
+      "title": "omi-media port: png/OMI__Reversing_Geometric_Authority.png",
+      "sid": "omi-media-port.png-omi-reversing-geometric-authority-png",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-media-port/png-the-omi-authority-model-png.omilisp",
+      "title": "omi-media port: png/The_OMI_Authority_Model.png",
+      "sid": "omi-media-port.png-the-omi-authority-model-png",
+      "kind": "omi-media.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-observer-lattice-sitter.omilisp",
+      "title": "OMI Observer / Lattice-Sitter Doctrine",
+      "sid": "omi-observer-lattice-sitter",
+      "kind": "observer.projection-resolver",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/dev-docs-omi-citation-notation-and-gauge-pre-header-md.omilisp",
+      "title": "omi-port port: dev-docs/OMI Citation Notation and Gauge Pre-Header.md",
+      "sid": "omi-port-port.dev-docs-omi-citation-notation-and-gauge-pre-header-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/dev-docs-omi-gauge-header-and-orbit-authority-md.omilisp",
+      "title": "omi-port port: dev-docs/OMI Gauge Header and Orbit Authority.md",
+      "sid": "omi-port-port.dev-docs-omi-gauge-header-and-orbit-authority-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/dev-docs-omi-gauge-pre-header-authority-md.omilisp",
+      "title": "omi-port port: dev-docs/OMI Gauge Pre-Header Authority.md",
+      "sid": "omi-port-port.dev-docs-omi-gauge-pre-header-authority-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/dev-docs-omi-pre-language-control-envelope-authority-replacing-ll-mm-nn-with-fs-gs-rs-us-md.omilisp",
+      "title": "omi-port port: dev-docs/OMI Pre-Language Control Envelope Authority - Replacing LL-MM-NN with FS-GS-RS-US.md",
+      "sid": "omi-port-port.dev-docs-omi-pre-language-control-envelope-authority-replacing-ll-mm-nn-with-fs-gs-rs-us-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-envelope",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/docs-omi-port-canonical-authority-md.omilisp",
+      "title": "omi-port port: docs/OMI-Port Canonical Authority.md",
+      "sid": "omi-port-port.docs-omi-port-canonical-authority-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/docs-pleth-gauge-difference-of-powers-derivation-for-omi-port-md.omilisp",
+      "title": "omi-port port: docs/Pleth - Gauge - Difference-of-Powers Derivation for OMI-Port.md",
+      "sid": "omi-port-port.docs-pleth-gauge-difference-of-powers-derivation-for-omi-port-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-port-port/docs-port-authority-md.omilisp",
+      "title": "omi-port port: docs/PORT_AUTHORITY.md",
+      "sid": "omi-port-port.docs-port-authority-md",
+      "kind": "omi-port.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-docs-temp-older-omicron-cidr-cons-first-principles-docx.omilisp",
+      "title": "omi-portal port: dev-docs/_temp/older/Omicron Cidr Cons First Principles.docx",
+      "sid": "omi-portal-port.dev-docs-temp-older-omicron-cidr-cons-first-principles-docx",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-docs-temp-older-omicron-cidr-cons-first-principles-md.omilisp",
+      "title": "omi-portal port: dev-docs/_temp/older/omicron_cidr_cons_first_principles.md",
+      "sid": "omi-portal-port.dev-docs-temp-older-omicron-cidr-cons-first-principles-md",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-docs-temp-older-omicron-cidr-cons-first-principles-pdf.omilisp",
+      "title": "omi-portal port: dev-docs/_temp/older/Omicron Cidr Cons First Principles.pdf",
+      "sid": "omi-portal-port.dev-docs-temp-older-omicron-cidr-cons-first-principles-pdf",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-docs-temp-omicron-isa-hs.omilisp",
+      "title": "omi-portal port: dev-docs/_temp/Omicron.ISA.hs",
+      "sid": "omi-portal-port.dev-docs-temp-omicron-isa-hs",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-docs-temp-the-omicron-object-model-md.omilisp",
+      "title": "omi-portal port: dev-docs/_temp/The Omicron Object Model.md",
+      "sid": "omi-portal-port.dev-docs-temp-the-omicron-object-model-md",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-docs-temp-whitepaper-the-240-state-md.omilisp",
+      "title": "omi-portal port: dev-docs/_temp/Whitepaper The 240 State.md",
+      "sid": "omi-portal-port.dev-docs-temp-whitepaper-the-240-state-md",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-portal-src-core-gauge-ts.omilisp",
+      "title": "omi-portal port: dev-portal/src/core/gauge.ts",
+      "sid": "omi-portal-port.dev-portal-src-core-gauge-ts",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/dev-portal-src-core-runtime-ts.omilisp",
+      "title": "omi-portal port: dev-portal/src/core/runtime.ts",
+      "sid": "omi-portal-port.dev-portal-src-core-runtime-ts",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/docs-omi-gauge-autonomous-function-space-md.omilisp",
+      "title": "omi-portal port: docs/omi-gauge-autonomous-function-space.md",
+      "sid": "omi-portal-port.docs-omi-gauge-autonomous-function-space-md",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/docs-omi-native-gauge-consolidated-canon-md.omilisp",
+      "title": "omi-portal port: docs/omi-native-gauge-consolidated-canon.md",
+      "sid": "omi-portal-port.docs-omi-native-gauge-consolidated-canon-md",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/docs-tetragrammatron-runtime-md.omilisp",
+      "title": "omi-portal port: docs/TETRAGRAMMATRON_RUNTIME.md",
+      "sid": "omi-portal-port.docs-tetragrammatron-runtime-md",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/scripts-omi-mkemmc-state-js.omilisp",
+      "title": "omi-portal port: scripts/omi-mkemmc-state.js",
+      "sid": "omi-portal-port.scripts-omi-mkemmc-state-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-canvas-omicron-canvas-js.omilisp",
+      "title": "omi-portal port: src/canvas/omicron-canvas.js",
+      "sid": "omi-portal-port.src-canvas-omicron-canvas-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-omi-omicron-kernel-js.omilisp",
+      "title": "omi-portal port: src/omi/omicron-kernel.js",
+      "sid": "omi-portal-port.src-omi-omicron-kernel-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-omi-sealed-gauge-word-js.omilisp",
+      "title": "omi-portal port: src/omi/sealed-gauge-word.js",
+      "sid": "omi-portal-port.src-omi-sealed-gauge-word-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-omi-tetragrammatron-worker-runtime-js.omilisp",
+      "title": "omi-portal port: src/omi/tetragrammatron-worker-runtime.js",
+      "sid": "omi-portal-port.src-omi-tetragrammatron-worker-runtime-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-qemu-omi-ged-gauge-map-js.omilisp",
+      "title": "omi-portal port: src/qemu/omi-ged-gauge-map.js",
+      "sid": "omi-portal-port.src-qemu-omi-ged-gauge-map-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-runtime-boot-compiler-js.omilisp",
+      "title": "omi-portal port: src/runtime/boot-compiler.js",
+      "sid": "omi-portal-port.src-runtime-boot-compiler-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-runtime-chiral-fifo-engine-js.omilisp",
+      "title": "omi-portal port: src/runtime/chiral-fifo-engine.js",
+      "sid": "omi-portal-port.src-runtime-chiral-fifo-engine-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-runtime-chiral-smith-js.omilisp",
+      "title": "omi-portal port: src/runtime/chiral-smith.js",
+      "sid": "omi-portal-port.src-runtime-chiral-smith-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-runtime-chiral-urn-js.omilisp",
+      "title": "omi-portal port: src/runtime/chiral-urn.js",
+      "sid": "omi-portal-port.src-runtime-chiral-urn-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-runtime-cla4-js.omilisp",
+      "title": "omi-portal port: src/runtime/cla4.js",
+      "sid": "omi-portal-port.src-runtime-cla4-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-runtime-polytope-sab-js.omilisp",
+      "title": "omi-portal port: src/runtime/polytope-sab.js",
+      "sid": "omi-portal-port.src-runtime-polytope-sab-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/src-world-persistent-world-state-js.omilisp",
+      "title": "omi-portal port: src/world/persistent-world-state.js",
+      "sid": "omi-portal-port.src-world-persistent-world-state-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-omicron-cidr-128-test-js.omilisp",
+      "title": "omi-portal port: test/omicron-cidr-128.test.js",
+      "sid": "omi-portal-port.test-omicron-cidr-128-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-omicron-cidr-test-js.omilisp",
+      "title": "omi-portal port: test/omicron-cidr.test.js",
+      "sid": "omi-portal-port.test-omicron-cidr-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-omicron-inversion-test-js.omilisp",
+      "title": "omi-portal port: test/omicron-inversion.test.js",
+      "sid": "omi-portal-port.test-omicron-inversion-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-omicron-kernel-test-js.omilisp",
+      "title": "omi-portal port: test/omicron-kernel.test.js",
+      "sid": "omi-portal-port.test-omicron-kernel-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-omicron-sexagesimal-test-js.omilisp",
+      "title": "omi-portal port: test/omicron-sexagesimal.test.js",
+      "sid": "omi-portal-port.test-omicron-sexagesimal-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-sealed-gauge-word-test-js.omilisp",
+      "title": "omi-portal port: test/sealed-gauge-word.test.js",
+      "sid": "omi-portal-port.test-sealed-gauge-word-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-portal-port/test-tetragrammatron-worker-runtime-test-js.omilisp",
+      "title": "omi-portal port: test/tetragrammatron-worker-runtime.test.js",
+      "sid": "omi-portal-port.test-tetragrammatron-worker-runtime-test-js",
+      "kind": "omi-portal.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-system.omilisp",
+      "title": "OMI Declarative Self Map",
+      "sid": "omi-system",
+      "kind": "constitutional.self-map",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/core-omicron-bin.omilisp",
+      "title": "omi-tetragrammatron port: core/omicron.bin",
+      "sid": "omi-tetragrammatron-port.core-omicron-bin",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/core-omicron-c.omilisp",
+      "title": "omi-tetragrammatron port: core/omicron.c",
+      "sid": "omi-tetragrammatron-port.core-omicron-c",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/core-omicron-h.omilisp",
+      "title": "omi-tetragrammatron port: core/omicron.h",
+      "sid": "omi-tetragrammatron-port.core-omicron-h",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/core-omicron-o.omilisp",
+      "title": "omi-tetragrammatron port: core/omicron.o",
+      "sid": "omi-tetragrammatron-port.core-omicron-o",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-citation-notation-and-gauge-pre-header-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/OMI Citation Notation and Gauge Pre-Header.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-citation-notation-and-gauge-pre-header-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-gauge-header-and-orbit-authority-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/OMI Gauge Header and Orbit Authority.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-gauge-header-and-orbit-authority-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-gauge-pre-header-authority-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/OMI Gauge Pre-Header Authority.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-gauge-pre-header-authority-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-gauge",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-pre-language-control-envelope-authority-replacing-ll-mm-nn-with-fs-gs-rs-us-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/OMI Pre-Language Control Envelope Authority - Replacing LL-MM-NN with FS-GS-RS-US.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-pre-language-control-envelope-authority-replacing-ll-mm-nn-with-fs-gs-rs-us-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-envelope",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-standardizes-the-512-bit-relational-access-envelope-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/OMI Standardizes the 512-Bit Relational Access Envelope.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-standardizes-the-512-bit-relational-access-envelope-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-envelope",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-user-space-cons-of-cidr-addressing-omicron-cidr-cons-first-principles-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omi user-space cons of cidr addressing /Omicron Cidr Cons First Principles.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-user-space-cons-of-cidr-addressing-omicron-cidr-cons-first-principles-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omi-user-space-cons-of-cidr-addressing-omicron-omi-log-cidr-dialect-spec-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omi user-space cons of cidr addressing /OMICRON_OMI-LOG_CIDR_DIALECT_SPEC.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omi-user-space-cons-of-cidr-addressing-omicron-omi-log-cidr-dialect-spec-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-agents-md-org.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/AGENTS.md.org",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-agents-md-org",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-agents-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/AGENTS.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-agents-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-images-1-png.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/images (1).png",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-images-1-png",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-images-2-png.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/images (2).png",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-images-2-png",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-images-png.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/images.png",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-images-png",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-index-org.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/index.org",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-index-org",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-logic-interp-c.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/logic-interp.c",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-logic-interp-c",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-logic-interp.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/logic-interp",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-logic-interp",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-makefile.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Makefile",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-makefile",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-omnicron-viewer.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/omnicron_viewer",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-omnicron-viewer",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-pair-machine-c.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/pair-machine.c",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-pair-machine-c",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-pair-machine.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/pair-machine",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-pair-machine",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-polylog.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/polylog",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-polylog",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-readme-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/README.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-readme-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-universal-life-protocol-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Universal Life Protocol.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-universal-life-protocol-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-untitled-1-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Untitled 1.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-untitled-1-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-untitled-3-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Untitled 3.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-untitled-3-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-untitled-4-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Untitled 4.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-untitled-4-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-untitled-5-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Untitled 5.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-untitled-5-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-archive-omicron-project-files-untitled-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/archive/omicron-project-files/Untitled.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-archive-omicron-project-files-untitled-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/dev-docs-omicron-md.omilisp",
+      "title": "omi-tetragrammatron port: dev-docs/OMICRON.md",
+      "sid": "omi-tetragrammatron-port.dev-docs-omicron-md",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-tetragrammatron-port/scripts-test-omicron-boot-c.omilisp",
+      "title": "omi-tetragrammatron port: scripts/test-omicron-boot.c",
+      "sid": "omi-tetragrammatron-port.scripts-test-omicron-boot-c",
+      "kind": "omi-tetragrammatron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omi-transmutator-roundtrip.omilisp",
+      "title": "OMI Transmutator Roundtrip Court",
+      "sid": "omi-transmutator-roundtrip",
+      "kind": "transmutator.roundtrip-court",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-operational/atomic-kernel.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "omnicron-operational/pair-machine.omilisp",
+      "title": "",
+      "sid": "",
+      "kind": "",
+      "reason": "no-sid-legacy-module",
+      "classification": "legacy-runtime-module",
+      "receipts": "",
+      "laws": []
+    },
+    {
+      "file": "omnicron-pair-machine.omilisp",
+      "title": "Omnicron Pair Machine Port",
+      "sid": "omnicron-pair-machine",
+      "kind": "runtime.pair-machine-declaration",
+      "reason": "has-laws",
+      "classification": "requires-receipt-authority",
+      "receipts": "",
+      "laws": [
+        "pair-cons8",
+        "pair-car8",
+        "pair-cdr8",
+        "kernel-delta16",
+        "atomic-delta16",
+        "eval-primitive-car",
+        "eval-primitive-cdr",
+        "eval-primitive-cons"
+      ]
+    },
+    {
+      "file": "omnicron-port/authority-classification-manifest-json.omilisp",
+      "title": "omnicron port: authority/classification_manifest.json",
+      "sid": "omnicron-port.authority-classification-manifest-json",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/authority-locks-manifest-logic.omilisp",
+      "title": "omnicron port: authority/locks_manifest.logic",
+      "sid": "omnicron-port.authority-locks-manifest-logic",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/authority-report-devdocs-refs-mjs.omilisp",
+      "title": "omnicron port: authority/report_devdocs_refs.mjs",
+      "sid": "omnicron-port.authority-report-devdocs-refs-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/authority-verify-classification-manifest-mjs.omilisp",
+      "title": "omnicron port: authority/verify_classification_manifest.mjs",
+      "sid": "omnicron-port.authority-verify-classification-manifest-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/dev-docs-back-end-99-build-bootable-runtime-md.omilisp",
+      "title": "omnicron port: dev-docs/back-end/99-build/bootable-runtime.md",
+      "sid": "omnicron-port.dev-docs-back-end-99-build-bootable-runtime-md",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/dev-docs-front-end-hardware-growth-pattern-or-cycling-of-omicron-as-gnomon-pdf.omilisp",
+      "title": "omnicron port: dev-docs/front-end/hardware/Growth Pattern, or cycling of Omicron as Gnomon.pdf",
+      "sid": "omnicron-port.dev-docs-front-end-hardware-growth-pattern-or-cycling-of-omicron-as-gnomon-pdf",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/dev-docs-front-end-polyforms-omicron-gnomon-computational-instrument-md.omilisp",
+      "title": "omnicron port: dev-docs/front-end/polyforms/Omicron-Gnomon Computational Instrument.md",
+      "sid": "omnicron-port.dev-docs-front-end-polyforms-omicron-gnomon-computational-instrument-md",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/docs-reference-logic-byte-to-dot-runtime-md.omilisp",
+      "title": "omnicron port: docs/reference/logic/BYTE_TO_DOT_RUNTIME.md",
+      "sid": "omnicron-port.docs-reference-logic-byte-to-dot-runtime-md",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/docs-reference-logic-omicron-gnomon-no-loss-whitepaper-md.omilisp",
+      "title": "omnicron port: docs/reference/logic/OMICRON_GNOMON_NO_LOSS_WHITEPAPER.md",
+      "sid": "omnicron-port.docs-reference-logic-omicron-gnomon-no-loss-whitepaper-md",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-generated-lock-state-ndjson.omilisp",
+      "title": "omnicron port: logic/generated/lock_state.ndjson",
+      "sid": "omnicron-port.logic-generated-lock-state-ndjson",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-state",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-aegean-plane-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/aegean_plane.mjs",
+      "sid": "omnicron-port.logic-runtime-aegean-plane-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-audio-synthesis-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/audio_synthesis.mjs",
+      "sid": "omnicron-port.logic-runtime-audio-synthesis-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-boot-omi-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/boot_omi.mjs",
+      "sid": "omnicron-port.logic-runtime-boot-omi-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-braille-plane-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/braille_plane.mjs",
+      "sid": "omnicron-port.logic-runtime-braille-plane-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-cons-diagram-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/cons_diagram.mjs",
+      "sid": "omnicron-port.logic-runtime-cons-diagram-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-datalog-engine-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/datalog_engine.mjs",
+      "sid": "omnicron-port.logic-runtime-datalog-engine-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-dot-rewrite-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/dot_rewrite.mjs",
+      "sid": "omnicron-port.logic-runtime-dot-rewrite-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-ged-ascii-substrate-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/ged_ascii_substrate.mjs",
+      "sid": "omnicron-port.logic-runtime-ged-ascii-substrate-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-geometry-3d-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/geometry_3d.mjs",
+      "sid": "omnicron-port.logic-runtime-geometry-3d-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-geometry-ontology-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/geometry_ontology.mjs",
+      "sid": "omnicron-port.logic-runtime-geometry-ontology-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-geometry-toolbox-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/geometry_toolbox.mjs",
+      "sid": "omnicron-port.logic-runtime-geometry-toolbox-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-header-ladder-runtime-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/header_ladder_runtime.mjs",
+      "sid": "omnicron-port.logic-runtime-header-ladder-runtime-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-header8-runtime-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/header8_runtime.mjs",
+      "sid": "omnicron-port.logic-runtime-header8-runtime-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-logic-packet-replay-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/logic_packet_replay.mjs",
+      "sid": "omnicron-port.logic-runtime-logic-packet-replay-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-network-protocol-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/network_protocol.mjs",
+      "sid": "omnicron-port.logic-runtime-network-protocol-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-polyform-toolbox-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/polyform_toolbox.mjs",
+      "sid": "omnicron-port.logic-runtime-polyform-toolbox-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-runtime-visual-renderer-mjs.omilisp",
+      "title": "omnicron port: logic/runtime/visual_renderer.mjs",
+      "sid": "omnicron-port.logic-runtime-visual-renderer-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/logic-verify-verify-header-ladder-runtime-mjs.omilisp",
+      "title": "omnicron port: logic/verify/verify_header_ladder_runtime.mjs",
+      "sid": "omnicron-port.logic-verify-verify-header-ladder-runtime-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-runtime",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/polyform-bitboards-verify-bitboard-authority-mjs.omilisp",
+      "title": "omnicron port: polyform/bitboards/verify_bitboard_authority.mjs",
+      "sid": "omnicron-port.polyform-bitboards-verify-bitboard-authority-mjs",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-authority",
+      "classification": "requires-receipt-authority",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/riscv-baremetal-omicron-c.omilisp",
+      "title": "omnicron port: riscv-baremetal/omicron.c",
+      "sid": "omnicron-port.riscv-baremetal-omicron-c",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/riscv-baremetal-omicron-driver-c.omilisp",
+      "title": "omnicron port: riscv-baremetal/omicron_driver.c",
+      "sid": "omnicron-port.riscv-baremetal-omicron-driver-c",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/riscv-baremetal-omicron-heartbeat-c.omilisp",
+      "title": "omnicron port: riscv-baremetal/omicron_heartbeat.c",
+      "sid": "omnicron-port.riscv-baremetal-omicron-heartbeat-c",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/riscv-baremetal-omicron-sbi-c.omilisp",
+      "title": "omnicron port: riscv-baremetal/omicron_sbi.c",
+      "sid": "omnicron-port.riscv-baremetal-omicron-sbi-c",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "omnicron-port/riscv-baremetal-run-omicron-sh.omilisp",
+      "title": "omnicron port: riscv-baremetal/run_omicron.sh",
+      "sid": "omnicron-port.riscv-baremetal-run-omicron-sh",
+      "kind": "omnicron.source-candidate",
+      "reason": "mentions-omicron",
+      "classification": "blocked-for-review",
+      "receipts": "identity=pending; projection=pending",
+      "laws": []
+    },
+    {
+      "file": "orientation-incidence-blackboard.omilisp",
+      "title": "Orientation Incidence Blackboard Doctrine",
+      "sid": "orientation-incidence-blackboard",
+      "kind": "algebra.derived-orientation-doctrine",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "polyform-cons-reconstruction.omilisp",
+      "title": "Polyforms as OMI-CONS Metric Reconstructions",
+      "sid": "polyform-cons-reconstruction",
+      "kind": "geometry.derived-doctrine",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "raw-binary-chunk-receipt-index.omilisp",
+      "title": "Raw Binary Chunk Receipt Index",
+      "sid": "raw-binary-chunk-receipt-index",
+      "kind": "lattice.chunk-receipt-index",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "raw-binary-decentralized-lattice.omilisp",
+      "title": "Raw Binary Decentralized Lattice Integration Audit",
+      "sid": "raw-binary-decentralized-lattice",
+      "kind": "lattice.integration-audit",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "runtime-channel-manifest.omilisp",
+      "title": "Runtime Channel Manifest Court",
+      "sid": "runtime-channel-manifest",
+      "kind": "runtime.channel-manifest",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "sixty-four-ion-blackboard-pairing.omilisp",
+      "title": "64-Ion Blackboard Pairing Doctrine",
+      "sid": "sixty-four-ion-blackboard-pairing",
+      "kind": "algebra.pairwise-blackboard-doctrine",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "trigintaduonion-triads.omilisp",
+      "title": "Trigintaduonion Ordered Triad Corpus",
+      "sid": "trigintaduonion-triads",
+      "kind": "algebra.reference-corpus",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "unicode-lexeme-bitmask-annotation-lattice.omilisp",
+      "title": "Unicode Lexeme Bitmask Annotation Lattice",
+      "sid": "unicode-lexeme-bitmask-annotation-lattice",
+      "kind": "annotation.unicode-bitmask-lattice",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "universal-closure-coding.omilisp",
+      "title": "Universal Closure Coding for 64-Ion Blackboard Pairing",
+      "sid": "universal-closure-coding",
+      "kind": "coding.universal-closure-law",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    },
+    {
+      "file": "wordnet-prolog-semantic-grounding.omilisp",
+      "title": "WordNet / Prolog Semantic Grounding Adapter",
+      "sid": "wordnet-prolog-semantic-grounding",
+      "kind": "semantic.grounding-adapter",
+      "reason": "extended-receipt-chain",
+      "classification": "requires-envelope",
+      "receipts": "identity=pending; projection=pending; package=pending; view=pending",
+      "laws": []
+    }
+  ]
+}
