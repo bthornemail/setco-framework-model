@@ -1,0 +1,138 @@
+{
+  "manifest_id": "pass9f-legacy-module-normalization-v0",
+  "target": "setco-framework-model",
+  "total_normalized": 9,
+  "by_role": {
+    "envelope-bitboard-implementation": 1,
+    "omicron-receipt-implementation": 1,
+    "omi-object-model-implementation": 1,
+    "orbit-implementation": 1,
+    "semantic-lattice-implementation": 1,
+    "sense-implementation": 1,
+    "metatron-witness-implementation": 1,
+    "atomic-kernel-implementation": 1,
+    "pair-machine-implementation": 1
+  },
+  "by_runtime_boundary": {
+    "true": 9
+  },
+  "modules": [
+    {
+      "generated_module_id": "legacy-edc4294ac669",
+      "source_file": "canon-operational/envelope-bitboard.omilisp",
+      "detected_role": "envelope-bitboard-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-053c30b128e5",
+      "source_file": "canon-operational/omicron-receipt.omilisp",
+      "detected_role": "omicron-receipt-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-15036c622c45",
+      "source_file": "canon-operational/omiom.omilisp",
+      "detected_role": "omi-object-model-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-70f8f5e2d008",
+      "source_file": "canon-operational/orbit.omilisp",
+      "detected_role": "orbit-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-c1a39c3feff7",
+      "source_file": "canon-operational/semantic-lattice.omilisp",
+      "detected_role": "semantic-lattice-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-db7255e0326d",
+      "source_file": "canon-operational/sense-pg.omilisp",
+      "detected_role": "sense-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-dca4b750eae1",
+      "source_file": "metatron-operational/metatron-witness.omilisp",
+      "detected_role": "metatron-witness-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-cfdaa13e8985",
+      "source_file": "omnicron-operational/atomic-kernel.omilisp",
+      "detected_role": "atomic-kernel-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    },
+    {
+      "generated_module_id": "legacy-48548866faeb",
+      "source_file": "omnicron-operational/pair-machine.omilisp",
+      "detected_role": "pair-machine-implementation",
+      "normalization_status": "normalized",
+      "requires_sid_assignment": true,
+      "requires_authority_section": true,
+      "requires_receipt_review": true,
+      "runtime_boundary": true,
+      "has_constants": true,
+      "has_functions": true,
+      "recommended_target_form": "declaration-header-with-sid"
+    }
+  ]
+}
