@@ -1,0 +1,306 @@
+{
+  "manifest_id": "pass10d-envelope-plan-acceptance-v0",
+  "target": "setco-framework-model",
+  "total_accepted": 6,
+  "acceptance_scope": "envelope-planning-record",
+  "acceptance_authority": "documentation/adjudication",
+  "requires_runtime_receipt": true,
+  "receipt_status": "not-runtime-receipt",
+  "plans": [
+    {
+      "envelope_plan_id": "env-plan-132f4422c0ba",
+      "source_file": "autonomous-world-live-transport-adapter-court.omilisp",
+      "source_sid": "autonomous-world-live-transport-adapter-court",
+      "receipt_chain": "identity=pending; projection=pending; transport-plan=pending; transport-event=pending; processing=pending",
+      "receipt_stages": [
+        {
+          "name": "identity",
+          "status": "pending"
+        },
+        {
+          "name": "projection",
+          "status": "pending"
+        },
+        {
+          "name": "transport-plan",
+          "status": "pending"
+        },
+        {
+          "name": "transport-event",
+          "status": "pending"
+        },
+        {
+          "name": "processing",
+          "status": "pending"
+        }
+      ],
+      "receipt_stage_count": 5,
+      "required_envelope_fields": [
+        "envelope-version",
+        "envelope-type",
+        "identity-hash",
+        "projection-target",
+        "transport-origin",
+        "transport-destination",
+        "timestamp",
+        "receipt-hash",
+        "authority-signature"
+      ],
+      "envelope_field_count": 9,
+      "previous_status": "planned",
+      "new_status": "accepted",
+      "acceptance_scope": "envelope-planning-record",
+      "acceptance_authority": "documentation/adjudication",
+      "requires_runtime_receipt": true,
+      "receipt_status": "not-runtime-receipt",
+      "acceptance_pass": "pass-10d"
+    },
+    {
+      "envelope_plan_id": "env-plan-41158c9571f6",
+      "source_file": "autonomous-world-merge-reconciliation-court.omilisp",
+      "source_sid": "autonomous-world-merge-reconciliation-court",
+      "receipt_chain": "identity=pending; projection=pending; merge-candidate=pending; conflict=pending; admission-decision=pending; merged-world=pending",
+      "receipt_stages": [
+        {
+          "name": "identity",
+          "status": "pending"
+        },
+        {
+          "name": "projection",
+          "status": "pending"
+        },
+        {
+          "name": "merge-candidate",
+          "status": "pending"
+        },
+        {
+          "name": "conflict",
+          "status": "pending"
+        },
+        {
+          "name": "admission-decision",
+          "status": "pending"
+        },
+        {
+          "name": "merged-world",
+          "status": "pending"
+        }
+      ],
+      "receipt_stage_count": 6,
+      "required_envelope_fields": [
+        "envelope-version",
+        "envelope-type",
+        "identity-hash",
+        "projection-target",
+        "merge-source",
+        "merge-target",
+        "timestamp",
+        "receipt-hash",
+        "authority-signature"
+      ],
+      "envelope_field_count": 9,
+      "previous_status": "planned",
+      "new_status": "accepted",
+      "acceptance_scope": "envelope-planning-record",
+      "acceptance_authority": "documentation/adjudication",
+      "requires_runtime_receipt": true,
+      "receipt_status": "not-runtime-receipt",
+      "acceptance_pass": "pass-10d"
+    },
+    {
+      "envelope_plan_id": "env-plan-858a55cc69de",
+      "source_file": "autonomous-world-package-sync-court.omilisp",
+      "source_sid": "autonomous-world-package-sync-court",
+      "receipt_chain": "identity=pending; projection=pending; package=pending; history-edge=pending; snapshot=pending; local-admission=pending",
+      "receipt_stages": [
+        {
+          "name": "identity",
+          "status": "pending"
+        },
+        {
+          "name": "projection",
+          "status": "pending"
+        },
+        {
+          "name": "package",
+          "status": "pending"
+        },
+        {
+          "name": "history-edge",
+          "status": "pending"
+        },
+        {
+          "name": "snapshot",
+          "status": "pending"
+        },
+        {
+          "name": "local-admission",
+          "status": "pending"
+        }
+      ],
+      "receipt_stage_count": 6,
+      "required_envelope_fields": [
+        "envelope-version",
+        "envelope-type",
+        "identity-hash",
+        "projection-target",
+        "package-id",
+        "timestamp",
+        "receipt-hash",
+        "authority-signature"
+      ],
+      "envelope_field_count": 8,
+      "previous_status": "planned",
+      "new_status": "accepted",
+      "acceptance_scope": "envelope-planning-record",
+      "acceptance_authority": "documentation/adjudication",
+      "requires_runtime_receipt": true,
+      "receipt_status": "not-runtime-receipt",
+      "acceptance_pass": "pass-10d"
+    },
+    {
+      "envelope_plan_id": "env-plan-f69795b874f8",
+      "source_file": "autonomous-world-peer-exchange-protocol.omilisp",
+      "source_sid": "autonomous-world-peer-exchange-protocol",
+      "receipt_chain": "identity=pending; projection=pending; peer=pending; offer=pending; exchange=pending",
+      "receipt_stages": [
+        {
+          "name": "identity",
+          "status": "pending"
+        },
+        {
+          "name": "projection",
+          "status": "pending"
+        },
+        {
+          "name": "peer",
+          "status": "pending"
+        },
+        {
+          "name": "offer",
+          "status": "pending"
+        },
+        {
+          "name": "exchange",
+          "status": "pending"
+        }
+      ],
+      "receipt_stage_count": 5,
+      "required_envelope_fields": [
+        "envelope-version",
+        "envelope-type",
+        "identity-hash",
+        "projection-target",
+        "peer-id",
+        "offer-hash",
+        "timestamp",
+        "receipt-hash",
+        "authority-signature"
+      ],
+      "envelope_field_count": 9,
+      "previous_status": "planned",
+      "new_status": "accepted",
+      "acceptance_scope": "envelope-planning-record",
+      "acceptance_authority": "documentation/adjudication",
+      "requires_runtime_receipt": true,
+      "receipt_status": "not-runtime-receipt",
+      "acceptance_pass": "pass-10d"
+    },
+    {
+      "envelope_plan_id": "env-plan-bd4b45687087",
+      "source_file": "autonomous-world-transport-repair-court.omilisp",
+      "source_sid": "autonomous-world-transport-repair-court",
+      "receipt_chain": "identity=pending; projection=pending; repair-request=pending; repair-payload=pending; repair-result=pending",
+      "receipt_stages": [
+        {
+          "name": "identity",
+          "status": "pending"
+        },
+        {
+          "name": "projection",
+          "status": "pending"
+        },
+        {
+          "name": "repair-request",
+          "status": "pending"
+        },
+        {
+          "name": "repair-payload",
+          "status": "pending"
+        },
+        {
+          "name": "repair-result",
+          "status": "pending"
+        }
+      ],
+      "receipt_stage_count": 5,
+      "required_envelope_fields": [
+        "envelope-version",
+        "envelope-type",
+        "identity-hash",
+        "projection-target",
+        "repair-target",
+        "repair-payload-hash",
+        "timestamp",
+        "receipt-hash",
+        "authority-signature"
+      ],
+      "envelope_field_count": 9,
+      "previous_status": "planned",
+      "new_status": "accepted",
+      "acceptance_scope": "envelope-planning-record",
+      "acceptance_authority": "documentation/adjudication",
+      "requires_runtime_receipt": true,
+      "receipt_status": "not-runtime-receipt",
+      "acceptance_pass": "pass-10d"
+    },
+    {
+      "envelope_plan_id": "env-plan-e0cf17b1e8d2",
+      "source_file": "autonomous-world-transport-replay-court.omilisp",
+      "source_sid": "autonomous-world-transport-replay-court",
+      "receipt_chain": "identity=pending; projection=pending; transport-log=pending; replay-entry=pending; replay=pending",
+      "receipt_stages": [
+        {
+          "name": "identity",
+          "status": "pending"
+        },
+        {
+          "name": "projection",
+          "status": "pending"
+        },
+        {
+          "name": "transport-log",
+          "status": "pending"
+        },
+        {
+          "name": "replay-entry",
+          "status": "pending"
+        },
+        {
+          "name": "replay",
+          "status": "pending"
+        }
+      ],
+      "receipt_stage_count": 5,
+      "required_envelope_fields": [
+        "envelope-version",
+        "envelope-type",
+        "identity-hash",
+        "projection-target",
+        "transport-log-id",
+        "replay-entry-hash",
+        "timestamp",
+        "receipt-hash",
+        "authority-signature"
+      ],
+      "envelope_field_count": 9,
+      "previous_status": "planned",
+      "new_status": "accepted",
+      "acceptance_scope": "envelope-planning-record",
+      "acceptance_authority": "documentation/adjudication",
+      "requires_runtime_receipt": true,
+      "receipt_status": "not-runtime-receipt",
+      "acceptance_pass": "pass-10d"
+    }
+  ]
+}
