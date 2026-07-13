@@ -1,0 +1,67 @@
+{
+  "manifest_id": "pass12-runtime-implementation-plan-v0",
+  "target": "setco-framework-model",
+  "total_units": 5,
+  "units": [
+    {
+      "unit_id": "impl-runtime-kernel",
+      "unit_name": "Runtime Kernel Implementation",
+      "authority_unblocked": "auth-runtime-kernel",
+      "source_inputs": ["pair-cons8", "pair-car8", "pair-cdr8"],
+      "required_headers": ["runtime-kernel.h"],
+      "required_c_files": ["runtime-kernel.c"],
+      "required_tests": ["runtime-kernel-tests/"],
+      "dependencies": [],
+      "forbidden_behavior": "Premature receipt emission",
+      "completion_criteria": "All kernel tests pass"
+    },
+    {
+      "unit_id": "impl-compiler",
+      "unit_name": "Compiler Constraint Implementation",
+      "authority_unblocked": "auth-compiler",
+      "source_inputs": ["eval-primitive-car", "eval-primitive-cdr", "eval-primitive-cons"],
+      "required_headers": ["compiler.h"],
+      "required_c_files": ["compiler.c"],
+      "required_tests": ["compiler-tests/"],
+      "dependencies": [],
+      "forbidden_behavior": "Premature constraint enforcement",
+      "completion_criteria": "All compiler tests pass"
+    },
+    {
+      "unit_id": "impl-omniprocessor",
+      "unit_name": "Omniprocessor Implementation",
+      "authority_unblocked": "auth-omniprocessor",
+      "source_inputs": ["kernel-delta16", "atomic-delta16"],
+      "required_headers": ["omniprocessor.h"],
+      "required_c_files": ["omniprocessor.c"],
+      "required_tests": ["omniprocessor-tests/"],
+      "dependencies": ["impl-runtime-kernel"],
+      "forbidden_behavior": "Premature receipt emission",
+      "completion_criteria": "All omniprocessor tests pass"
+    },
+    {
+      "unit_id": "impl-envelope-construction",
+      "unit_name": "Envelope Construction Implementation",
+      "authority_unblocked": "auth-envelope-construction",
+      "source_inputs": ["6 envelope plans (dry-run)"],
+      "required_headers": ["envelope-construction.h"],
+      "required_c_files": ["envelope-construction.c"],
+      "required_tests": ["envelope-construction-tests/"],
+      "dependencies": ["impl-runtime-kernel", "impl-omniprocessor", "impl-compiler"],
+      "forbidden_behavior": "Premature envelope construction",
+      "completion_criteria": "All envelope construction tests pass"
+    },
+    {
+      "unit_id": "impl-legacy-execution",
+      "unit_name": "Legacy Module Execution Implementation",
+      "authority_unblocked": "auth-legacy-execution",
+      "source_inputs": ["9 legacy modules (normalized)"],
+      "required_headers": ["legacy-execution.h"],
+      "required_c_files": ["legacy-execution.c"],
+      "required_tests": ["legacy-execution-tests/"],
+      "dependencies": ["impl-runtime-kernel", "impl-compiler"],
+      "forbidden_behavior": "Premature legacy module execution",
+      "completion_criteria": "All legacy module execution tests pass"
+    }
+  ]
+}
