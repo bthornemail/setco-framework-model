@@ -1,0 +1,59 @@
+{
+  "manifest_id": "pass9i-runtime-receipt-authority-plan-v0",
+  "target": "setco-framework-model",
+  "authority_requirements": {
+    "runtime_receipt_authority": "REQUIRED",
+    "envelope_construction_authority": "REQUIRED",
+    "law_enforcement_authority": "REQUIRED",
+    "legacy_module_execution_authority": "REQUIRED"
+  },
+  "components": {
+    "runtime_kernel": "NOT YET ESTABLISHED",
+    "omniprocessor": "NOT YET ESTABLISHED",
+    "compiler": "NOT YET ESTABLISHED"
+  },
+  "required_fields": [
+    "envelope-version",
+    "envelope-type",
+    "identity-hash",
+    "projection-target",
+    "timestamp",
+    "receipt-hash",
+    "authority-signature",
+    "transport-origin",
+    "transport-destination",
+    "package-id",
+    "peer-id",
+    "offer-hash",
+    "merge-source",
+    "merge-target",
+    "repair-target",
+    "repair-payload-hash",
+    "transport-log-id",
+    "replay-entry-hash"
+  ],
+  "constraints": [
+    "pair-construction-constraint",
+    "pair-car-access-constraint",
+    "pair-cdr-access-constraint",
+    "kernel-delta-constraint",
+    "atomic-delta-constraint",
+    "eval-primitive-car-constraint",
+    "eval-primitive-cdr-constraint",
+    "eval-primitive-cons-constraint"
+  ],
+  "documentation_only": {
+    "semantic_layer_artifacts": 2572,
+    "documentation_mentions": 150
+  },
+  "runtime_candidates": {
+    "envelope_plans": 6,
+    "law_constraints": 8,
+    "legacy_modules": 9
+  },
+  "blockers": [
+    "No runtime kernel",
+    "No omniprocessor",
+    "No compiler"
+  ]
+}
