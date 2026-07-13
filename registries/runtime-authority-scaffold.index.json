@@ -1,0 +1,62 @@
+{
+  "manifest_id": "pass9j-runtime-authority-scaffold-v0",
+  "target": "setco-framework-model",
+  "total_scaffolded": 5,
+  "authorities": [
+    {
+      "authority_id": "auth-runtime-kernel",
+      "authority_name": "Runtime Kernel Authority",
+      "authority_scope": "Primary receipt emission authority",
+      "required_inputs": "Runtime kernel establishment",
+      "permitted_outputs": "Runtime receipt emission (when established)",
+      "forbidden_outputs": "Premature receipt emission",
+      "status": "scaffolded",
+      "receipt_emission_allowed": false,
+      "construction_allowed": false
+    },
+    {
+      "authority_id": "auth-omniprocessor",
+      "authority_name": "Omniprocessor Authority",
+      "authority_scope": "Secondary receipt emission authority",
+      "required_inputs": "Omniprocessor establishment",
+      "permitted_outputs": "Secondary receipt emission (when established)",
+      "forbidden_outputs": "Premature receipt emission",
+      "status": "scaffolded",
+      "receipt_emission_allowed": false,
+      "construction_allowed": false
+    },
+    {
+      "authority_id": "auth-compiler",
+      "authority_name": "Compiler Constraint Authority",
+      "authority_scope": "Law enforcement authority",
+      "required_inputs": "Compiler establishment",
+      "permitted_outputs": "Constraint enforcement (when established)",
+      "forbidden_outputs": "Premature constraint enforcement",
+      "status": "scaffolded",
+      "receipt_emission_allowed": false,
+      "construction_allowed": false
+    },
+    {
+      "authority_id": "auth-envelope-construction",
+      "authority_name": "Envelope Construction Authority",
+      "authority_scope": "Real envelope construction authority",
+      "required_inputs": "Runtime kernel + Omniprocessor + Compiler",
+      "permitted_outputs": "Real envelope construction (when all established)",
+      "forbidden_outputs": "Premature envelope construction",
+      "status": "scaffolded",
+      "receipt_emission_allowed": false,
+      "construction_allowed": false
+    },
+    {
+      "authority_id": "auth-legacy-execution",
+      "authority_name": "Legacy Module Execution Authority",
+      "authority_scope": "Legacy module execution authority",
+      "required_inputs": "Runtime kernel + Compiler + SID assignment",
+      "permitted_outputs": "Legacy module execution (when all established)",
+      "forbidden_outputs": "Premature legacy module execution",
+      "status": "scaffolded",
+      "receipt_emission_allowed": false,
+      "construction_allowed": false
+    }
+  ]
+}
