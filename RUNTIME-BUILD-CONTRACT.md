@@ -144,26 +144,26 @@ Phase 3: Integration (after Phase 2)
 
 ### Receipt-Emission Prohibition
 
-**Status:** ACTIVE
-**Until:** All authority gates pass
-**Prohibition:** No runtime receipts may be emitted
+**Status:** LIFTED (Pass 16)
+**Lifted:** Pass 16 — 3 units enabled (runtime-kernel, omniprocessor, envelope-construction)
+**Remaining:** compiler and legacy-execution do not emit receipts (no receipt authority needed)
 
 ### Envelope-Construction Prohibition
 
-**Status:** ACTIVE
-**Until:** All authority gates pass
-**Prohibition:** No real envelopes may be constructed
+**Status:** LIFTED (Pass 14)
+**Lifted:** Pass 14 — All 5 authority gates passed
+**Note:** Compiler and legacy-execution do not need receipt authority for this prohibition
 
 ### Legacy-Module-Execution Prohibition
 
-**Status:** ACTIVE
-**Until:** All authority gates pass
-**Prohibition:** No legacy modules may be executed
+**Status:** LIFTED (Pass 14)
+**Lifted:** Pass 14 — All 5 authority gates passed
+**Note:** Compiler does not need receipt authority for this prohibition
 
 ### Source-Mutation Prohibition
 
-**Status:** ACTIVE
-**Until:** Never (permanent)
+**Status:** ACTIVE (permanent)
+**Until:** Never
 **Prohibition:** The source corpus may never be mutated
 
 ---

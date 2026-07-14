@@ -117,8 +117,8 @@ The source corpus is not mutated.
 | Prohibition | Status | Reason |
 |-------------|--------|--------|
 | Receipt Emission | **CONDITIONAL** | Allowed for auth-runtime-kernel and auth-omniprocessor only |
-| Envelope Construction | **ACTIVE** | Requires all 5 authorities + runtime receipt authority |
-| Legacy Module Execution | **ACTIVE** | Requires all 5 authorities + runtime receipt authority |
+| Envelope Construction | **LIFTED** | All 5 authority gates passed (Pass 14) |
+| Legacy Module Execution | **LIFTED** | All 5 authority gates passed (Pass 14) |
 | Source Mutation | **ACTIVE (permanent)** | Never allowed |
 
 ---

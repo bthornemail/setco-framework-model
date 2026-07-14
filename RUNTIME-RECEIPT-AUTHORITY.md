@@ -109,9 +109,9 @@ The source corpus is not mutated.
 | Constraint | Status | Reason |
 |------------|--------|--------|
 | Receipt emission prohibition | **LIFTED** for 3 authorities | auth-runtime-kernel, auth-omniprocessor, auth-envelope-construction |
-| Receipt emission prohibition | **ACTIVE** for 2 authorities | auth-compiler, auth-legacy-execution |
-| Envelope construction prohibition | **ACTIVE** | Requires all 5 authorities + runtime receipt authority |
-| Legacy module execution prohibition | **ACTIVE** | Requires all 5 authorities + runtime receipt authority |
+| Receipt emission prohibition | **ACTIVE** for 2 authorities | auth-compiler, auth-legacy-execution (no receipt authority needed) |
+| Envelope construction prohibition | **LIFTED** | All 5 authority gates passed (Pass 14) |
+| Legacy module execution prohibition | **LIFTED** | All 5 authority gates passed (Pass 14) |
 | Source mutation prohibition | **ACTIVE (permanent)** | Never allowed |
 
 ### Receipt Type Matrix

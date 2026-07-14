@@ -1,0 +1,34 @@
+{
+  "manifest_id": "pass16z-receipt-authority-consistency-audit-v0",
+  "target": "setco-framework-model",
+  "audit_date": "2026-07-13",
+  "documents_audited": [
+    "RUNTIME-BUILD-CONTRACT.md",
+    "RUNTIME-AUTHORITY-GRANTS.md",
+    "RUNTIME-RECEIPT-AUTHORITY.md",
+    "RECEIPT-EMISSION-ENABLEMENT.md"
+  ],
+  "registries_audited": [
+    "registries/runtime-authority-grants.index.json",
+    "registries/runtime-receipt-authority.index.json",
+    "registries/receipt-emission-enablement.index.json"
+  ],
+  "findings": {
+    "total": 5,
+    "finding_1": "BUILD CONTRACT defines the canonical prohibition trigger",
+    "finding_2": "All 5 authority gates have passed",
+    "finding_3": "Passes 14 and 15 added an unstated requirement",
+    "finding_4": "Compiler and legacy-execution receipt authority is not required",
+    "finding_5": "The prohibition wording is inconsistent"
+  },
+  "conclusion": {
+    "envelope_construction_blocked": false,
+    "legacy_module_execution_blocked": false,
+    "reason": "BUILD CONTRACT prohibition trigger 'until all authority gates pass' has been satisfied"
+  },
+  "recommended_corrections": [
+    "Update BUILD CONTRACT prohibitions to LIFTED",
+    "Update RECEIPT-AUTHORITY and AUTHORITY-GRANTS documents",
+    "Update registries"
+  ]
+}
