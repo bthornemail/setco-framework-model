@@ -1,0 +1,41 @@
+{
+  "manifest_id": "pass25-adapter-adjudicator-v0",
+  "target": "setco-framework-model",
+  "implementation_date": "2026-07-14",
+  "total_functions": 9,
+  "total_tests": 3,
+  "tests_passed": 3,
+  "tests_failed": 0,
+  "all_tests_pass": true,
+  "functions": [
+    {"name": "adjudicator_init", "description": "Initialize adjudicator"},
+    {"name": "adjudicator_submit", "description": "Submit declaration for adjudication"},
+    {"name": "adjudicator_review", "description": "Move to UNDER_REVIEW"},
+    {"name": "adjudicator_grant", "description": "Grant adapter"},
+    {"name": "adjudicator_deny", "description": "Deny adapter"},
+    {"name": "adjudicator_suspend", "description": "Suspend adapter"},
+    {"name": "adjudicator_revoke", "description": "Revoke adapter permanently"},
+    {"name": "adjudicator_lift_suspension", "description": "Lift suspension"},
+    {"name": "adjudicator_lookup", "description": "Look up adapter record"}
+  ],
+  "state_transitions": [
+    {"from": "DECLARED", "to": "UNDER_REVIEW"},
+    {"from": "UNDER_REVIEW", "to": "GRANTED"},
+    {"from": "UNDER_REVIEW", "to": "DENIED"},
+    {"from": "GRANTED", "to": "SUSPENDED"},
+    {"from": "GRANTED", "to": "REVOKED"},
+    {"from": "SUSPENDED", "to": "GRANTED"},
+    {"from": "SUSPENDED", "to": "REVOKED"}
+  ],
+  "files": [
+    "adapter-adjudicator.h",
+    "adapter-adjudicator.c"
+  ],
+  "test_files": [
+    "adapter-adjudicator-tests/test_adjudicator_init.c",
+    "adapter-adjudicator-tests/test_adjudicator_submit.c",
+    "adapter-adjudicator-tests/test_adjudicator_transitions.c"
+  ],
+  "authority": "Adjudicator does NOT grant authority by default",
+  "runtime_connection": "Adjudicator does NOT open runtime connection"
+}
