@@ -1,0 +1,69 @@
+{
+  "manifest_id": "pass15-runtime-receipt-authority-v0",
+  "target": "setco-framework-model",
+  "establishment_date": "2026-07-13",
+  "total_authorities": 5,
+  "total_receipt_authorities_established": 3,
+  "total_receipt_authorities_not_established": 2,
+  "receipt_emission_enabled_count": 3,
+  "envelope_construction_status": "ACTIVE",
+  "legacy_module_execution_status": "ACTIVE",
+  "source_mutation_status": "ACTIVE (permanent)",
+  "authorities": [
+    {
+      "authority_id": "auth-runtime-kernel",
+      "receipt_authority_status": "ESTABLISHED",
+      "receipt_scope": "Primary receipt emission",
+      "allowed_receipt_types": ["pair-construction-receipt", "pair-access-receipt"],
+      "forbidden_receipt_types": ["envelope-receipt", "legacy-module-receipt"],
+      "requires_runtime_event": "pair construction or access",
+      "requires_envelope": false,
+      "emission_enabled": true,
+      "grant_basis": "G1.x ALL PASS + auth-runtime-kernel GRANTED"
+    },
+    {
+      "authority_id": "auth-compiler",
+      "receipt_authority_status": "NOT ESTABLISHED",
+      "receipt_scope": "N/A",
+      "allowed_receipt_types": [],
+      "forbidden_receipt_types": ["all"],
+      "requires_runtime_event": "N/A",
+      "requires_envelope": false,
+      "emission_enabled": false,
+      "grant_basis": "auth-compiler GRANTED but receipt_emission_allowed = false"
+    },
+    {
+      "authority_id": "auth-omniprocessor",
+      "receipt_authority_status": "ESTABLISHED",
+      "receipt_scope": "Secondary receipt emission",
+      "allowed_receipt_types": ["delta-processing-receipt", "state-transition-receipt"],
+      "forbidden_receipt_types": ["envelope-receipt", "legacy-module-receipt"],
+      "requires_runtime_event": "delta processing or state transition",
+      "requires_envelope": false,
+      "emission_enabled": true,
+      "grant_basis": "G3.x ALL PASS + auth-omniprocessor GRANTED"
+    },
+    {
+      "authority_id": "auth-envelope-construction",
+      "receipt_authority_status": "ESTABLISHED",
+      "receipt_scope": "Envelope receipt emission",
+      "allowed_receipt_types": ["envelope-construction-receipt", "field-validation-receipt"],
+      "forbidden_receipt_types": ["legacy-module-receipt"],
+      "requires_runtime_event": "envelope construction or field validation",
+      "requires_envelope": true,
+      "emission_enabled": true,
+      "grant_basis": "G4.x ALL PASS + auth-envelope-construction GRANTED"
+    },
+    {
+      "authority_id": "auth-legacy-execution",
+      "receipt_authority_status": "NOT ESTABLISHED",
+      "receipt_scope": "N/A",
+      "allowed_receipt_types": [],
+      "forbidden_receipt_types": ["all"],
+      "requires_runtime_event": "N/A",
+      "requires_envelope": false,
+      "emission_enabled": false,
+      "grant_basis": "auth-legacy-execution GRANTED but receipt_emission_allowed = false"
+    }
+  ]
+}
