@@ -1,0 +1,31 @@
+{
+  "manifest_id": "pass23-adapter-declaration-abi-v0",
+  "target": "setco-framework-model",
+  "abi_date": "2026-07-14",
+  "magic": "0x41444543",
+  "version": 1,
+  "total_flags": 3,
+  "total_error_codes": 7,
+  "flags": [
+    {"bit": 0, "name": "request_source_read", "description": "Request source-corpus read access"},
+    {"bit": 1, "name": "request_receipt_consumption", "description": "Request receipt consumption access"},
+    {"bit": 2, "name": "request_runtime_connection", "description": "Request runtime connection access"}
+  ],
+  "error_codes": [
+    {"code": "ADEC_OK", "description": "Success"},
+    {"code": "ADEC_ERR_INVALID_MAGIC", "description": "Magic is not 0x41444543"},
+    {"code": "ADEC_ERR_UNKNOWN_VERSION", "description": "Version is not 1"},
+    {"code": "ADEC_ERR_EMPTY_FIELD", "description": "A required field is empty"},
+    {"code": "ADEC_ERR_RESERVED_BITS", "description": "Reserved bits are non-zero"},
+    {"code": "ADEC_ERR_CHECKSUM", "description": "Checksum mismatch"},
+    {"code": "ADEC_ERR_PARSE", "description": "Parsing error"}
+  ],
+  "adjudication_states": [
+    {"state": 0, "name": "DECLARED"},
+    {"state": 1, "name": "UNDER_REVIEW"},
+    {"state": 2, "name": "GRANTED"},
+    {"state": 3, "name": "DENIED"},
+    {"state": 4, "name": "SUSPENDED"},
+    {"state": 5, "name": "REVOKED"}
+  ]
+}
