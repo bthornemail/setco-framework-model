@@ -1,0 +1,31 @@
+{
+  "manifest_id": "pass22-adapter-adjudication-registry-v0",
+  "target": "setco-framework-model",
+  "registry_date": "2026-07-14",
+  "total_states": 6,
+  "total_rules": 6,
+  "adjudication_states": [
+    "DECLARED",
+    "UNDER_REVIEW",
+    "GRANTED",
+    "DENIED",
+    "SUSPENDED",
+    "REVOKED"
+  ],
+  "adjudication_roles": {
+    "adapter": "declares intent and authority requests",
+    "SETCO": "reviews declarations, adjudicates authority",
+    "OMI": "defines bounded interface",
+    "runtime": "executes if granted, remains closed by default"
+  },
+  "adjudication_transitions": [
+    {"from": "DECLARED", "to": "UNDER_REVIEW"},
+    {"from": "UNDER_REVIEW", "to": "GRANTED"},
+    {"from": "UNDER_REVIEW", "to": "DENIED"},
+    {"from": "GRANTED", "to": "SUSPENDED"},
+    {"from": "GRANTED", "to": "REVOKED"},
+    {"from": "SUSPENDED", "to": "GRANTED"},
+    {"from": "SUSPENDED", "to": "REVOKED"},
+    {"from": "DENIED", "to": "DECLARED"}
+  ]
+}
