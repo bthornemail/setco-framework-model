@@ -1,0 +1,26 @@
+{
+  "manifest_id": "pass20-integration-boundary-atlas-v0",
+  "target": "setco-framework-model",
+  "atlas_date": "2026-07-14",
+  "boundary_categories": 4,
+  "total_rules": 4,
+  "source_corpus_boundary": {
+    "source_repos": ["omi-lisp", "omi-protocol", "omi-isa", "omi---imo"],
+    "status": "READ-ONLY",
+    "may_write": "none"
+  },
+  "receipt_authority_boundary": {
+    "emitters": ["runtime-kernel", "omniprocessor", "envelope-construction"],
+    "non_emitters": ["compiler", "legacy-execution"],
+    "external_emitters": "none"
+  },
+  "projection_authority_boundary": {
+    "projectors": ["runtime-kernel", "compiler", "omniprocessor", "envelope-construction", "legacy-execution", "SETCO", "OMI"],
+    "external_projectors": "none"
+  },
+  "runtime_connection_boundary": {
+    "connectors": ["SETCO", "OMI"],
+    "external_connectors": "none",
+    "runtime_federation": "none"
+  }
+}
