@@ -5,8 +5,8 @@
  * This header defines the interface for Envelope Construction.
  * The Envelope Construction provides envelope field validation and construction.
  * 
- * Authority: auth-envelope-construction (scaffolded, not granted)
- * Receipt emission: DISABLED
+ * Authority: auth-envelope-construction (GRANTED)
+ * Receipt emission: ENABLED (Pass 16)
  */
 
 #ifndef ENVELOPE_CONSTRUCTION_H
@@ -83,8 +83,8 @@ const envelope_state_t* envelope_get_state(void);
  * @brief Check if receipt emission is enabled
  * @return true if enabled, false if disabled
  * 
- * NOTE: Receipt emission is currently DISABLED by build contract.
- * This function will always return false until authority is granted.
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-envelope-construction has been granted and receipt authority established.
  */
 bool envelope_receipt_emission_enabled(void);
 

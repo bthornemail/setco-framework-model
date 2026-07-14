@@ -22,8 +22,8 @@ int main(void) {
     assert(state->state_transitions == 0);
     assert(state->receipt_count == 0);
     
-    /* Test 3: Receipt emission disabled */
-    assert(omniprocessor_receipt_emission_enabled() == false);
+    /* Test 3: Receipt emission enabled (Pass 16) */
+    assert(omniprocessor_receipt_emission_enabled() == true);
     
     printf("  PASS\n");
     return 0;

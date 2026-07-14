@@ -21,8 +21,8 @@ int main(void) {
     assert(state->pair_count == 0);
     assert(state->receipt_count == 0);
     
-    /* Test 3: Receipt emission disabled */
-    assert(kernel_receipt_emission_enabled() == false);
+    /* Test 3: Receipt emission enabled (Pass 16) */
+    assert(kernel_receipt_emission_enabled() == true);
     
     printf("  PASS\n");
     return 0;

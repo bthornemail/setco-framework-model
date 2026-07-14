@@ -5,8 +5,8 @@
  * This file implements the Runtime Kernel.
  * The Runtime Kernel provides pair construction and access primitives.
  * 
- * Authority: auth-runtime-kernel (scaffolded, not granted)
- * Receipt emission: DISABLED
+ * Authority: auth-runtime-kernel (GRANTED)
+ * Receipt emission: ENABLED (Pass 16)
  */
 
 #include "runtime-kernel.h"
@@ -24,10 +24,10 @@ static kernel_state_t kernel_state = {
 /**
  * @brief Receipt emission flag
  * 
- * NOTE: Receipt emission is DISABLED by build contract.
- * This flag will remain false until authority is granted.
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-runtime-kernel has been granted and receipt authority established.
  */
-static bool receipt_emission_enabled = false;
+static bool receipt_emission_enabled = true;
 
 int kernel_init(void) {
     if (kernel_state.initialized) {
@@ -78,6 +78,6 @@ const kernel_state_t* kernel_get_state(void) {
 }
 
 bool kernel_receipt_emission_enabled(void) {
-    /* Receipt emission is DISABLED by build contract */
+    /* Receipt emission is ENABLED by Pass 16 */
     return receipt_emission_enabled;
 }

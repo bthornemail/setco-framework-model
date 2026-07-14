@@ -5,8 +5,8 @@
  * This header defines the interface for the Runtime Kernel.
  * The Runtime Kernel provides pair construction and access primitives.
  * 
- * Authority: auth-runtime-kernel (scaffolded, not granted)
- * Receipt emission: DISABLED
+ * Authority: auth-runtime-kernel (GRANTED)
+ * Receipt emission: ENABLED (Pass 16)
  */
 
 #ifndef RUNTIME_KERNEL_H
@@ -62,8 +62,8 @@ const kernel_state_t* kernel_get_state(void);
  * @brief Check if receipt emission is enabled
  * @return true if enabled, false if disabled
  * 
- * NOTE: Receipt emission is currently DISABLED by build contract.
- * This function will always return false until authority is granted.
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-runtime-kernel has been granted and receipt authority established.
  */
 bool kernel_receipt_emission_enabled(void);
 

@@ -1,0 +1,64 @@
+{
+  "manifest_id": "pass16-receipt-emission-enablement-v0",
+  "target": "setco-framework-model",
+  "enablement_date": "2026-07-13",
+  "total_units": 5,
+  "total_enabled": 3,
+  "total_disabled": 2,
+  "all_tests_pass": true,
+  "total_tests": 24,
+  "tests_passed": 24,
+  "tests_failed": 0,
+  "units": [
+    {
+      "unit_id": "impl-runtime-kernel",
+      "authority": "auth-runtime-kernel",
+      "authority_status": "GRANTED",
+      "receipt_authority_status": "ESTABLISHED",
+      "emission_enabled": true,
+      "changed_files": ["runtime-kernel.h", "runtime-kernel.c"],
+      "updated_tests": ["test_kernel_init.c", "test_kernel_receipt.c"],
+      "test_status": "5/5 PASS"
+    },
+    {
+      "unit_id": "impl-compiler",
+      "authority": "auth-compiler",
+      "authority_status": "GRANTED",
+      "receipt_authority_status": "NOT ESTABLISHED",
+      "emission_enabled": false,
+      "changed_files": [],
+      "updated_tests": [],
+      "test_status": "4/4 PASS (unchanged)"
+    },
+    {
+      "unit_id": "impl-omniprocessor",
+      "authority": "auth-omniprocessor",
+      "authority_status": "GRANTED",
+      "receipt_authority_status": "ESTABLISHED",
+      "emission_enabled": true,
+      "changed_files": ["omniprocessor.h", "omniprocessor.c"],
+      "updated_tests": ["test_omniprocessor_init.c", "test_omniprocessor_receipt.c"],
+      "test_status": "5/5 PASS"
+    },
+    {
+      "unit_id": "impl-envelope-construction",
+      "authority": "auth-envelope-construction",
+      "authority_status": "GRANTED",
+      "receipt_authority_status": "ESTABLISHED",
+      "emission_enabled": true,
+      "changed_files": ["envelope-construction.h", "envelope-construction.c"],
+      "updated_tests": ["test_envelope_init.c", "test_receipt_emission.c"],
+      "test_status": "5/5 PASS"
+    },
+    {
+      "unit_id": "impl-legacy-execution",
+      "authority": "auth-legacy-execution",
+      "authority_status": "GRANTED",
+      "receipt_authority_status": "NOT ESTABLISHED",
+      "emission_enabled": false,
+      "changed_files": [],
+      "updated_tests": [],
+      "test_status": "5/5 PASS (unchanged)"
+    }
+  ]
+}

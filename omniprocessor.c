@@ -5,8 +5,8 @@
  * This file implements the Omniprocessor.
  * The Omniprocessor provides delta processing and state transition management.
  * 
- * Authority: auth-omniprocessor (scaffolded, not granted)
- * Receipt emission: DISABLED
+ * Authority: auth-omniprocessor (GRANTED)
+ * Receipt emission: ENABLED (Pass 16)
  */
 
 #include "omniprocessor.h"
@@ -25,10 +25,10 @@ static omniprocessor_state_t omniprocessor_state = {
 /**
  * @brief Receipt emission flag
  * 
- * NOTE: Receipt emission is DISABLED by build contract.
- * This flag will remain false until authority is granted.
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-omniprocessor has been granted and receipt authority established.
  */
-static bool receipt_emission_enabled = false;
+static bool receipt_emission_enabled = true;
 
 int omniprocessor_init(void) {
     if (omniprocessor_state.initialized) {
@@ -111,6 +111,6 @@ const omniprocessor_state_t* omniprocessor_get_state(void) {
 }
 
 bool omniprocessor_receipt_emission_enabled(void) {
-    /* Receipt emission is DISABLED by build contract */
+    /* Receipt emission is ENABLED by Pass 16 */
     return receipt_emission_enabled;
 }

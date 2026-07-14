@@ -5,8 +5,8 @@
  * This file implements Envelope Construction.
  * The Envelope Construction provides envelope field validation and construction.
  * 
- * Authority: auth-envelope-construction (scaffolded, not granted)
- * Receipt emission: DISABLED
+ * Authority: auth-envelope-construction (GRANTED)
+ * Receipt emission: ENABLED (Pass 16)
  */
 
 #include "envelope-construction.h"
@@ -25,10 +25,10 @@ static envelope_state_t envelope_state = {
 /**
  * @brief Receipt emission flag
  * 
- * NOTE: Receipt emission is DISABLED by build contract.
- * This flag will remain false until authority is granted.
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-envelope-construction has been granted and receipt authority established.
  */
-static bool receipt_emission_enabled = false;
+static bool receipt_emission_enabled = true;
 
 int envelope_init(void) {
     if (envelope_state.initialized) {
@@ -120,6 +120,6 @@ const envelope_state_t* envelope_get_state(void) {
 }
 
 bool envelope_receipt_emission_enabled(void) {
-    /* Receipt emission is DISABLED by build contract */
+    /* Receipt emission is ENABLED by Pass 16 */
     return receipt_emission_enabled;
 }

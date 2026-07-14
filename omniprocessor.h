@@ -5,8 +5,8 @@
  * This header defines the interface for the Omniprocessor.
  * The Omniprocessor provides delta processing and state transition management.
  * 
- * Authority: auth-omniprocessor (scaffolded, not granted)
- * Receipt emission: DISABLED
+ * Authority: auth-omniprocessor (GRANTED)
+ * Receipt emission: ENABLED (Pass 16)
  */
 
 #ifndef OMNIPROCESSOR_H
@@ -74,8 +74,8 @@ const omniprocessor_state_t* omniprocessor_get_state(void);
  * @brief Check if receipt emission is enabled
  * @return true if enabled, false if disabled
  * 
- * NOTE: Receipt emission is currently DISABLED by build contract.
- * This function will always return false until authority is granted.
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-omniprocessor has been granted and receipt authority established.
  */
 bool omniprocessor_receipt_emission_enabled(void);
 
