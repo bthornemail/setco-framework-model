@@ -1,0 +1,11 @@
+# Compiled test binaries
+*-tests/test_*
+!*-tests/test_*.c
+!*-tests/Makefile
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
