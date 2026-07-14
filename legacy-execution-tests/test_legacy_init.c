@@ -1,6 +1,6 @@
 /**
  * @file test_legacy_init.c
- * @brief Test legacy initialization
+ * @brief Test legacy initialization (Pass 18)
  */
 
 #include <stdio.h>
@@ -22,7 +22,7 @@ int main(void) {
     assert(state->modules_executed == 0);
     assert(state->receipt_count == 0);
     
-    /* Test 3: Receipt emission disabled */
+    /* Test 3: Receipt emission disabled (legacy does not emit) */
     assert(legacy_receipt_emission_enabled() == false);
     
     printf("  PASS\n");

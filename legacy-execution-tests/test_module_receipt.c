@@ -1,6 +1,6 @@
 /**
  * @file test_module_receipt.c
- * @brief Test module receipt emission (disabled)
+ * @brief Test module receipt emission (disabled for legacy execution)
  */
 
 #include <stdio.h>
@@ -14,7 +14,7 @@ int main(void) {
     int result = legacy_init();
     assert(result == 0);
     
-    /* Test 1: Receipt emission disabled */
+    /* Test 1: Receipt emission disabled (legacy does not emit) */
     bool enabled = legacy_receipt_emission_enabled();
     assert(enabled == false);
     
@@ -23,10 +23,13 @@ int main(void) {
     module.name = "test-module";
     module.status = MODULE_STATUS_UNLOADED;
     
-    int r1 = legacy_load_module_stub(&module);
+    int r0 = legacy_assign_sid(&module, 0x1234);
+    assert(r0 == 0);
+    
+    int r1 = legacy_load_module(&module);
     assert(r1 == 0);
     
-    int r2 = legacy_execute_module_stub(&module);
+    int r2 = legacy_execute_module(&module);
     assert(r2 == 0);
     
     /* Test 3: Check receipt count (should be 0) */

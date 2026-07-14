@@ -1,0 +1,43 @@
+{
+  "manifest_id": "pass18-real-legacy-execution-v0",
+  "target": "setco-framework-model",
+  "execution_date": "2026-07-14",
+  "total_units": 5,
+  "total_tests": 24,
+  "tests_passed": 24,
+  "tests_failed": 0,
+  "all_tests_pass": true,
+  "legacy_execution": {
+    "status": "REAL",
+    "previous_status": "STUB",
+    "validation": "MODULE + SID + STATUS",
+    "receipt_emission": "DISABLED",
+    "authority": "auth-legacy-execution (GRANTED)"
+  },
+  "new_functions": [
+    "legacy_validate_module",
+    "legacy_assign_sid",
+    "legacy_load_module",
+    "legacy_execute_module"
+  ],
+  "changed_files": [
+    "legacy-execution.h",
+    "legacy-execution.c"
+  ],
+  "updated_tests": [
+    "test_legacy_init.c",
+    "test_sid_assignment.c",
+    "test_module_loading.c",
+    "test_module_execution.c",
+    "test_module_receipt.c"
+  ],
+  "prohibitions": {
+    "legacy_execution": "LIFTED",
+    "source_mutation": "ACTIVE (permanent)"
+  },
+  "receipt_emission": {
+    "enabled": false,
+    "reason": "Legacy execution is downstream, does not emit receipts",
+    "doctrine_required": true
+  }
+}
