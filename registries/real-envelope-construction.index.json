@@ -1,0 +1,36 @@
+{
+  "manifest_id": "pass17-real-envelope-construction-v0",
+  "target": "setco-framework-model",
+  "construction_date": "2026-07-14",
+  "total_units": 5,
+  "total_tests": 24,
+  "tests_passed": 24,
+  "tests_failed": 0,
+  "all_tests_pass": true,
+  "envelope_construction": {
+    "status": "REAL",
+    "previous_status": "STUB",
+    "validation": "ALL 5 FIELDS",
+    "receipt_emission": "ENABLED",
+    "authority": "auth-envelope-construction (GRANTED)"
+  },
+  "new_functions": [
+    "envelope_validate_all",
+    "envelope_construct",
+    "envelope_emit_receipt"
+  ],
+  "changed_files": [
+    "envelope-construction.h",
+    "envelope-construction.c"
+  ],
+  "updated_tests": [
+    "test_envelope_construction.c",
+    "test_authority_signature.c",
+    "test_receipt_emission.c"
+  ],
+  "prohibitions": {
+    "envelope_construction": "LIFTED",
+    "legacy_execution": "LIFTED",
+    "source_mutation": "ACTIVE (permanent)"
+  }
+}

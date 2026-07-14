@@ -36,6 +36,30 @@ typedef struct {
 } envelope_result_t;
 
 /**
+ * @brief Envelope construction result
+ */
+typedef struct {
+    bool success;
+    uint64_t envelope;
+    const char* message;
+} envelope_construct_result_t;
+
+/**
+ * @brief Envelope receipt (64-bit packed)
+ * 
+ * Format: provenance:16 | steps:8 | LL:8 | NN:16 | MM:16
+ */
+typedef struct {
+    uint64_t receipt;
+    uint16_t provenance;
+    uint8_t steps;
+    uint8_t ll;
+    uint16_t nn;
+    uint16_t mm;
+    bool emission_enabled;
+} envelope_receipt_t;
+
+/**
  * @brief Envelope construction state
  */
 typedef struct {
@@ -60,18 +84,40 @@ int envelope_init(void);
 envelope_result_t envelope_validate_field(envelope_field_t field, uint64_t value);
 
 /**
- * @brief Construct an envelope (stub)
+ * @brief Validate all envelope fields
  * @param provenance The provenance value
  * @param steps The steps value
  * @param ll The LL value
  * @param nn The NN value
  * @param mm The MM value
- * @return The constructed envelope (64-bit packed)
- * 
- * NOTE: Envelope construction is a stub.
- * Actual envelope construction requires runtime receipt authority.
+ * @return true if all fields are valid, false otherwise
  */
-uint64_t envelope_construct_stub(uint16_t provenance, uint8_t steps, uint8_t ll, uint16_t nn, uint16_t mm);
+bool envelope_validate_all(uint16_t provenance, uint8_t steps, uint8_t ll, uint16_t nn, uint16_t mm);
+
+/**
+ * @brief Construct an envelope (validates all fields first)
+ * @param provenance The provenance value
+ * @param steps The steps value
+ * @param ll The LL value
+ * @param nn The NN value
+ * @param mm The MM value
+ * @return The construction result
+ * 
+ * NOTE: This is real envelope construction (Pass 17).
+ * All fields are validated before construction.
+ * A receipt is emitted if emission is enabled.
+ */
+envelope_construct_result_t envelope_construct(uint16_t provenance, uint8_t steps, uint8_t ll, uint16_t nn, uint16_t mm);
+
+/**
+ * @brief Emit a receipt for a constructed envelope
+ * @param envelope The constructed envelope
+ * @return The receipt (or NULL if emission disabled)
+ * 
+ * NOTE: Receipt emission is ENABLED by Pass 16.
+ * auth-envelope-construction has been granted and receipt authority established.
+ */
+envelope_receipt_t* envelope_emit_receipt(uint64_t envelope);
 
 /**
  * @brief Get the current envelope state

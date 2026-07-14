@@ -1,6 +1,6 @@
 /**
  * @file test_authority_signature.c
- * @brief Test authority signature verification (stub)
+ * @brief Test authority signature verification (Pass 17)
  */
 
 #include <stdio.h>
@@ -15,8 +15,8 @@ int main(void) {
     assert(result == 0);
     
     /* Test 1: Construct envelope with authority fields */
-    uint64_t env = envelope_construct_stub(0x0001, 0x01, 0x01, 0x0001, 0x0001);
-    assert(env != 0);
+    envelope_construct_result_t r0 = envelope_construct(0x0001, 0x01, 0x01, 0x0001, 0x0001);
+    assert(r0.success == true);
     
     /* Test 2: Validate provenance field */
     envelope_result_t r1 = envelope_validate_field(FIELD_PROVENANCE, 0x0001);

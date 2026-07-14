@@ -30,6 +30,11 @@ static envelope_state_t envelope_state = {
  */
 static bool receipt_emission_enabled = true;
 
+/**
+ * @brief Last emitted receipt (static storage)
+ */
+static envelope_receipt_t last_receipt;
+
 int envelope_init(void) {
     if (envelope_state.initialized) {
         return -1; /* Already initialized */
@@ -98,9 +103,38 @@ envelope_result_t envelope_validate_field(envelope_field_t field, uint64_t value
     return result;
 }
 
-uint64_t envelope_construct_stub(uint16_t provenance, uint8_t steps, uint8_t ll, uint16_t nn, uint16_t mm) {
-    /* Envelope construction is a stub */
-    /* Actual construction requires runtime receipt authority */
+bool envelope_validate_all(uint16_t provenance, uint8_t steps, uint8_t ll, uint16_t nn, uint16_t mm) {
+    if (!envelope_state.initialized) {
+        return false;
+    }
+    
+    /* Validate each field */
+    envelope_result_t r1 = envelope_validate_field(FIELD_PROVENANCE, provenance);
+    envelope_result_t r2 = envelope_validate_field(FIELD_STEPS, steps);
+    envelope_result_t r3 = envelope_validate_field(FIELD_LL, ll);
+    envelope_result_t r4 = envelope_validate_field(FIELD_NN, nn);
+    envelope_result_t r5 = envelope_validate_field(FIELD_MM, mm);
+    
+    return r1.valid && r2.valid && r3.valid && r4.valid && r5.valid;
+}
+
+envelope_construct_result_t envelope_construct(uint16_t provenance, uint8_t steps, uint8_t ll, uint16_t nn, uint16_t mm) {
+    envelope_construct_result_t result = {
+        .success = false,
+        .envelope = 0,
+        .message = "Construction failed"
+    };
+    
+    if (!envelope_state.initialized) {
+        result.message = "Envelope construction not initialized";
+        return result;
+    }
+    
+    /* Validate all fields before construction */
+    if (!envelope_validate_all(provenance, steps, ll, nn, mm)) {
+        result.message = "Field validation failed";
+        return result;
+    }
     
     /* 64-bit packed format: provenance:16 | steps:8 | LL:8 | NN:16 | MM:16 */
     uint64_t envelope = 0;
@@ -110,9 +144,37 @@ uint64_t envelope_construct_stub(uint16_t provenance, uint8_t steps, uint8_t ll,
     envelope |= ((uint64_t)nn & 0xFFFF) << 16;
     envelope |= ((uint64_t)mm & 0xFFFF);
     
+    result.success = true;
+    result.envelope = envelope;
+    result.message = "Construction successful";
+    
     envelope_state.envelopes_constructed++;
     
-    return envelope;
+    /* Emit receipt if enabled */
+    if (receipt_emission_enabled) {
+        envelope_emit_receipt(envelope);
+    }
+    
+    return result;
+}
+
+envelope_receipt_t* envelope_emit_receipt(uint64_t envelope) {
+    if (!receipt_emission_enabled) {
+        return NULL;
+    }
+    
+    /* Extract fields from packed envelope */
+    last_receipt.receipt = envelope;
+    last_receipt.provenance = (uint16_t)((envelope >> 48) & 0xFFFF);
+    last_receipt.steps = (uint8_t)((envelope >> 40) & 0xFF);
+    last_receipt.ll = (uint8_t)((envelope >> 32) & 0xFF);
+    last_receipt.nn = (uint16_t)((envelope >> 16) & 0xFFFF);
+    last_receipt.mm = (uint16_t)(envelope & 0xFFFF);
+    last_receipt.emission_enabled = true;
+    
+    envelope_state.receipt_count++;
+    
+    return &last_receipt;
 }
 
 const envelope_state_t* envelope_get_state(void) {

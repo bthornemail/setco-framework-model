@@ -1,6 +1,6 @@
 /**
  * @file test_receipt_emission.c
- * @brief Test receipt emission (enabled by Pass 16)
+ * @brief Test receipt emission with real construction (Pass 17)
  */
 
 #include <stdio.h>
@@ -18,13 +18,14 @@ int main(void) {
     bool enabled = envelope_receipt_emission_enabled();
     assert(enabled == true);
     
-    /* Test 2: Construct envelope (receipt emission enabled) */
-    uint64_t env = envelope_construct_stub(0x0001, 0x01, 0x01, 0x0001, 0x0001);
-    assert(env != 0);
+    /* Test 2: Construct envelope (real construction) */
+    envelope_construct_result_t r1 = envelope_construct(0x0001, 0x01, 0x01, 0x0001, 0x0001);
+    assert(r1.success == true);
+    assert(r1.envelope != 0);
     
-    /* Test 3: Check receipt count (stub: not incremented yet) */
+    /* Test 3: Check receipt count */
     const envelope_state_t* state = envelope_get_state();
-    assert(state->receipt_count == 0);
+    assert(state->receipt_count == 1);
     
     /* Test 4: Receipt emission still enabled */
     enabled = envelope_receipt_emission_enabled();
