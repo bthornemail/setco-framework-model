@@ -148,8 +148,8 @@ Adapters interacting with this release:
 
 ```
 Tag: omi-adapter-runtime-v1.0.0
-setco-framework-model: https://github.com/bthornemail/omi-lisp
-omi-object-model: https://github.com/bthornemail/omi-lisp
+setco-framework-model: https://github.com/bthornemail/setco-framework-model
+omi-object-model: https://github.com/bthornemail/omi-object-model
 ```
 
 ---
