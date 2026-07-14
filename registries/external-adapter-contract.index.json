@@ -1,0 +1,21 @@
+{
+  "manifest_id": "pass21-external-adapter-contract-v0",
+  "target": "setco-framework-model",
+  "contract_date": "2026-07-14",
+  "total_rules": 5,
+  "adapter_declaration": {
+    "required_fields": ["adapter_id", "adapter_name", "adapter_version", "adapter_purpose", "adapter_authority_request"],
+    "optional_fields": []
+  },
+  "adapter_authority": {
+    "source_corpus_read": "requestable, default NO",
+    "source_corpus_write": "never granted",
+    "receipt_emission": "never granted",
+    "receipt_consumption": "requestable, default NO",
+    "receipt_validation": "never granted",
+    "projection": "never granted",
+    "runtime_connection": "requestable, default NO"
+  },
+  "adapter_lifecycle": ["declaration", "adjudication", "grant", "connection"],
+  "adapter_violations": ["receipt_emission", "source_mutation", "projection", "unauthorized_connection"]
+}
